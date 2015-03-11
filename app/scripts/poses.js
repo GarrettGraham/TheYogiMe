@@ -4,6 +4,4 @@ var poses = [
     sanskritTitle: "Adho Mukha Svanasana",
     benefits: "builds focus",
     }
-
-
 ]
