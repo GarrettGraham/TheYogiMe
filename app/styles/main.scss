@@ -50,11 +50,10 @@ body {
 }
 
 /* Welcome Yogi Message and button to route to 'why yoga' page */
-.heroImage {
-  background-image:"http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg";
-  background-size:cover;
+.welcomeMessage {
+  padding-top:9%;    
   text-align: center;
-  border-bottom: 1px solid #00a86b;
+//  border-bottom: 1px solid #00a86b;
   .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -64,8 +63,18 @@ body {
   }
   }
 
-}
+.heroImage {
+    background-size: cover;
+    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
 
+.banner {
+
+}
 
 .poseSelection{
     list-style: none;
@@ -79,27 +88,23 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .heroImage {
-    border-bottom: 0;
-  }
-}
+///* Responsive: Portrait tablets and up */
+//@media screen and (min-width: 768px) {
+//  .container {
+//    max-width: 730px;
+//  }
+//
+//  /* Remove the padding we set earlier */
+//  .header,
+//  .marketing,
+//  .footer {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//
+//  /* Space out the masthead */
+//  .header {
+//    margin-bottom: 30px;
+//  }
+//
+//  /* Remove the bottom border on the jumbotron for visual effect */
