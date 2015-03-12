@@ -51,6 +51,8 @@ body {
 
 /* Welcome Yogi Message and button to route to 'why yoga' page */
 .heroImage {
+  background-image:"http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg";
+  background-size:cover;
   text-align: center;
   border-bottom: 1px solid #00a86b;
   .btn {
@@ -60,7 +62,7 @@ body {
   .yogaHistory {
     background-color:#00a86b;
   }
-  
+  }
 
 }
 
