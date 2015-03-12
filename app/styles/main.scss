@@ -50,7 +50,7 @@ body {
 }
 
 /* Welcome Yogi Message and button to route to 'why yoga' page */
-.jumbotron {
+.heroImage {
   text-align: center;
   border-bottom: 1px solid #00a86b;
   .btn {
@@ -60,6 +60,9 @@ body {
   .yogaHistory {
     background-color:#00a86b;
   }
+    img {
+        margin:0,
+    }
 }
 
 .poseSelection{
@@ -94,7 +97,7 @@ body {
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
+  .heroImage {
     border-bottom: 0;
   }
 }
