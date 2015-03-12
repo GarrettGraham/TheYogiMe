@@ -53,13 +53,9 @@ body {
 .welcomeMessage {
   padding-top:9%;    
   text-align: center;
-//  border-bottom: 1px solid #00a86b;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
   .yogaHistory {
-    background-color:#00a86b;
+      padding-bottom:0;
+//    background-color:#00a86b;
   }
   }
 
@@ -72,21 +68,19 @@ body {
     background-position-y: 50%;
   }
 
-.banner {
 
-}
 
 .poseSelection{
     list-style: none;
 }
 
 /* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
+//.marketing {
+//  margin: 40px 0;
+//  p + h4 {
+//    margin-top: 28px;
+//  }
+//}
 
 ///* Responsive: Portrait tablets and up */
 //@media screen and (min-width: 768px) {
