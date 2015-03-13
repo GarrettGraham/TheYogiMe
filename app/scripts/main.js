@@ -10,15 +10,22 @@ angular.module('theYogiMe', [
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'main.html'
+        templateUrl: 'main.html',
       })
       .state('yoga', {
         url:'/yoga',
-        templateUrl: 'app/yoga.html'
+        templateUrl: 'yoga.html'
       })
+      .state('poses', {
+        url:'/poses',
+        templateUrl: 'poses.html'
+    })
       .state('meditate', {
         url:'/meditate',
-        templateUrl: 'app/meditate.html'
+        templateUrl: 'meditate.html'
       })
 
 }])
+
+
+
