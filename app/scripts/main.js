@@ -11,7 +11,7 @@ angular.module('theYogiMe', [
       .state('home', {
         url: '/',
         templateUrl: 'main.html',
-        controller: 'MainCtrl'
+//        controller: 'MainCtrl'
       })
       .state('yoga', {
         url:'/yoga',
