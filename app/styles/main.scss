@@ -72,9 +72,15 @@ body {
 .playButton {
     text-align: center;
     background: none;
-    padding-left:19em;
+    padding-left:17.5em;
     padding-top:20em;
-    position: absolute;
+//    position:static;
+}
+
+.pauseButton {
+    text-align: center;
+    background: none;
+    padding-top:20em;
 }
 
 .poseSelection{
