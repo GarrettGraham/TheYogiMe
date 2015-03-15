@@ -105,11 +105,17 @@ body{
 
 .discoverYoga {
     background-size: cover;
-    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/6b/28/19/6b28193d8d52b3276eb9a39ee4574718.jpg);
+
+//    background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-17.jpg);
     height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
+} 
+
+.discoverYoga > p {
+    text-align: center;
 }
 
 .poseSelection{
