@@ -1,2 +1,2 @@
-app.controller('mainCtrl', function() {
-});
+//app.controller('mainCtrl', function() {
+//});

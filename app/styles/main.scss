@@ -59,31 +59,35 @@ body {
   }
 
 .heroImage,
-.meditationPage {
+ {
     background-size: cover;
     background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
     height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
-    
   }
 
-//play button that should stay centered min/max width
+.meditationPage 
+ {
+    background-size: cover;
+    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+
+//play button stays centered min/max width, responsive
 .playButton {
     text-align: center;
     background: none;
     min-height: 100%;
-    min-height: 100vh;
+    min-height: 117vh;
     min-width: 100%;
     display:flex;
     align-items: center;
     justify-content: center;
-//    margin-left: 19em;
-//    margin-top:20em;
-//    padding-left:17.5em;
-//    padding-top:20em;
-//    position:static;
 }
 
 //.pauseButton {
