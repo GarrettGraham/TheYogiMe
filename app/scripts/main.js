@@ -1,29 +1,32 @@
 /* jshint devel:true */
 //console.log('\'Allo \'Allo!');
 
-angular.module('theYogiMe', [
+var app = angular.module('theYogiMe', [
     'ui.router'
 ])
-.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
     
     $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'main.html',
-//        controller: 'MainCtrl'
+        controller: 'mainCtrl as main'
       })
       .state('yoga', {
         url:'/yoga',
-        templateUrl: 'yoga.html'
+        templateUrl: 'yoga.html',
+        controller: 'mainCtrl as main'
       })
       .state('poses', {
         url:'/poses',
-        templateUrl: 'poses.html'
+        templateUrl: 'poses.html',
+        controller: 'mainCtrl as main'
     })
       .state('meditate', {
         url:'/meditate',
-        templateUrl: 'meditate.html'
+        templateUrl: 'meditate.html',
+        controller: 'mainCtrl as main'
       })
 
 }])
