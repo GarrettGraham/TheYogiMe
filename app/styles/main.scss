@@ -76,8 +76,10 @@ body {
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
-    padding:0;
   }
+    body{
+    padding:0;
+    }
 
 //play button stays centered min/max width, responsive
 .playButton {
@@ -89,6 +91,7 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 //.pauseButton {

@@ -31,5 +31,3 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
 
 }])
 
-
-
