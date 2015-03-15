@@ -73,8 +73,14 @@ body {
 .playButton {
     text-align: center;
     background: none;
-    margin-left: 19em;
-    margin-top:20em;
+    min-height: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+//    margin-left: 19em;
+//    margin-top:20em;
 //    padding-left:17.5em;
 //    padding-top:20em;
 //    position:static;
