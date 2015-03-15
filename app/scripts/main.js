@@ -10,23 +10,23 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'main.html',
+        templateUrl: 'templates/main.html',
         controller: 'mainCtrl as main'
       })
       .state('yoga', {
         url:'/yoga',
-        templateUrl: 'yoga.html',
+        templateUrl: 'templates/yoga.html',
         controller: 'mainCtrl as main'
       })
       .state('poses', {
         url:'/poses',
-        templateUrl: 'poses.html',
+        templateUrl: 'templates/poses.html',
         controller: 'mainCtrl as main'
     })
       .state('meditate', {
         url:'/meditate',
-        templateUrl: 'meditate.html',
-        controller: 'mainCtrl as main'
+        templateUrl: 'templates/meditate.html',
+        controller: 'meditateCtrl as meditate'
       })
 
 }])
