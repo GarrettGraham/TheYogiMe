@@ -72,10 +72,11 @@ body {
  {
     background-size: cover;
     background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
+    padding:0;
   }
 
 //play button stays centered min/max width, responsive

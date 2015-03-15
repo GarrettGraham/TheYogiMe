@@ -16,17 +16,17 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
       .state('yoga', {
         url:'/yoga',
         templateUrl: 'templates/yoga.html',
-        controller: 'mainCtrl as main'
+//        controller: 'mainCtrl as main'
       })
       .state('poses', {
         url:'/poses',
         templateUrl: 'templates/poses.html',
-        controller: 'mainCtrl as main'
+//        controller: 'mainCtrl as main'
     })
       .state('meditate', {
         url:'/meditate',
         templateUrl: 'templates/meditate.html',
-        controller: 'meditateCtrl as meditate'
+//        controller: 'meditateCtrl as meditate'
       })
 
 }])
