@@ -30,26 +30,6 @@ $icon-font-path: '../fonts/';
   padding-top: 1em;
 }
 
-  /* Make the masthead heading the same height as the navigation */
-//  h3 {
-//    margin-top: 0;
-//    margin-bottom: 0;
-//    line-height: 40px;
-//    padding-bottom: 19px;
-//  }
-//}
-
-/* Custom page footer */
-//.footer {
-//  padding-top: 19px;
-//  color: #777;
-//  border-top: 1px solid #e5e5e5;
-//}
-//
-//.container-narrow > hr {
-//  margin: 30px 0;
-//}
-
 /* Welcome Yogi Message and button to route to 'why yoga' page */
 .welcomeMessage {
   padding-top:9%;    
@@ -118,10 +98,21 @@ body{
     text-align: center;
 }
 
+/* poses.html styling */
 .poseSelection{
     list-style: none;
 }
 
+.chairYoga {
+    text-align: center;
+    min-height: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 /* Supporting marketing content */
 //.marketing {
 //  margin: 40px 0;
@@ -150,3 +141,23 @@ body{
 //  }
 //
 //  /* Remove the bottom border on the jumbotron for visual effect */
+
+  /* Make the masthead heading the same height as the navigation */
+//  h3 {
+//    margin-top: 0;
+//    margin-bottom: 0;
+//    line-height: 40px;
+//    padding-bottom: 19px;
+//  }
+//}
+
+/* Custom page footer */
+//.footer {
+//  padding-top: 19px;
+//  color: #777;
+//  border-top: 1px solid #e5e5e5;
+//}
+//
+//.container-narrow > hr {
+//  margin: 30px 0;
+//}
