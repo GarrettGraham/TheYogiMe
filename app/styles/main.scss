@@ -50,7 +50,11 @@ $icon-font-path: '../fonts/';
     background-position-y: 50%;
   }
 
+.yogaButton {
+    background: none;
+}
 
+/*meditation page*/
 .meditationPage 
  {
     background-size: cover;
@@ -123,6 +127,8 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+
 /* Supporting marketing content */
 //.marketing {
 //  margin: 40px 0;
