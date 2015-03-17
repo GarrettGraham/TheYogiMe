@@ -1,6 +1,7 @@
 /* jshint devel:true */
 //console.log('\'Allo \'Allo!');
 
+
 var app = angular.module('theYogiMe', [
     'ui.router'
 ])
@@ -27,7 +28,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
         url:'/meditate',
         templateUrl: 'templates/meditate.html',
 //        controller: 'meditateCtrl as meditate'
-      })
+    })
+      .state('studioMap', {
+        url:'/studioMap',
+        templateUrl: 'templates/studioMap.html',
+    })
 
 }])
 
