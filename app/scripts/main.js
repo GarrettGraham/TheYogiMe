@@ -3,9 +3,9 @@
 
 
 var app = angular.module('theYogiMe', [
-    'ui.router'
+    'ui.router', 'uiGmapgoogle-maps'
 ])
-app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
     
     $stateProvider
