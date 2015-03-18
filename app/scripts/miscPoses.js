@@ -1,6 +1,3 @@
-
-
-
 var poses = [
     {
     englishTitle: 'Downward-Facing Dog',
