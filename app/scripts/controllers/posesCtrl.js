@@ -1,5 +1,6 @@
 'use strict' 
 
-app.controller('posesCtrl', function() {
+angular.module('theYogiMe')
+.controller('posesCtrl', function() {
 
 });

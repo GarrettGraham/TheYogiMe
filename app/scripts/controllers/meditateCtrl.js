@@ -1,5 +1,6 @@
 'use strict'
 
-app.controller('meditateCtrl', function() {
+angular.module('theYogiMe')
+.controller('meditateCtrl', function() {
 //    console.log('hello')
 });

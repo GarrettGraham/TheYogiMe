@@ -1,5 +1,6 @@
 'use strict'
 
-app.controller('yogaCtrl', function(){
-    console.log('hello world')
+angular.module('theYogiMe')
+.controller('yogaCtrl', function(){
+//    console.log('hello world')
 });
