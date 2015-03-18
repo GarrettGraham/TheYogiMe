@@ -17,12 +17,12 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
       .state('yoga', {
         url:'/yoga',
         templateUrl: 'templates/yoga.html',
-//        controller: 'mainCtrl as main'
+        controller: 'yogaCtrl as yoga'
       })
       .state('poses', {
         url:'/poses',
         templateUrl: 'templates/poses.html',
-//        controller: 'mainCtrl as main'
+        controller: 'posesCtrl as poses'
     })
       .state('meditate', {
         url:'/meditate',
@@ -32,6 +32,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
       .state('studioMap', {
         url:'/studioMap',
         templateUrl: 'templates/studioMap.html',
+        controller: 'mapCtrl as studioMap'
     })
 }])
 
