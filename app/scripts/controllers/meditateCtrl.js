@@ -1,4 +1,7 @@
-//app.controller('meditateCtrl', function($scope){
-//    $scope.playAudio = 
-//
-//});
+'use strict'
+
+angular.module('TheYogiMe')
+.controller('meditateCtrl', function(){
+    
+
+});

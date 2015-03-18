@@ -27,12 +27,11 @@ app.config(['$urlRouterProvider', '$stateProvider', function($urlRouterProvider,
       .state('meditate', {
         url:'/meditate',
         templateUrl: 'templates/meditate.html',
-//        controller: 'meditateCtrl as meditate'
+        controller: 'meditateCtrl as meditate'
     })
       .state('studioMap', {
         url:'/studioMap',
         templateUrl: 'templates/studioMap.html',
     })
-
 }])
 

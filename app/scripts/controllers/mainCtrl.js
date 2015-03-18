@@ -1,3 +1,3 @@
 app.controller('mainCtrl', function() {
-    console.log('hello')
+//    console.log('hello')
 });
