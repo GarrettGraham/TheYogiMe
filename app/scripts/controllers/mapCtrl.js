@@ -10,15 +10,26 @@ angular.module('theYogiMe')
             zoom: 11
         };
         $scope.studioMarkers = [{
+                // body coach 
                 id: 1,
                 latitude: 28.757783,
                 longitude: -81.369105
         },
-            {
+            { //serenity now yoga
                 id: 2,
                 latitude: 28.6981543,
                 longitude: -81.3753033
-                }
+                },
+            { //altamonte springs yoga
+                id: 3,
+                latitude: 28.6957451,
+                longitude: -81.3890362
+                },
+            {
+                id: 4,
+                longitude: 28.6726664,
+                latitude: -81.4198279
+            },
             ];
     });
 
