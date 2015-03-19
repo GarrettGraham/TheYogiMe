@@ -2,78 +2,71 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
-
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
-} 
-
-
-
-
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* nav bar home button */
 
 //.header {
 //    
 //    background: #6cd7a2;
 //}
-
 /* Custom page header */
+
 .header {
-  border-bottom: 1px solid #e5e5e5;
-  padding-top: 1em;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 1em;
+}
+/* Welcome Yogi Message and button to route to 'why yoga' page */
+
+.welcomeMessage {
+    padding-top: 9%;
+    text-align: center;
+    color: white;
+    //  .yogaHistory {
+    ////      padding-bottom:0;
+    //  }
 }
 
-/* Welcome Yogi Message and button to route to 'why yoga' page */
-.welcomeMessage {
-  padding-top:9%;    
-  text-align: center;
-  color: white;
-//  .yogaHistory {
-////      padding-bottom:0;
-//  }
-  }
-
 .heroImage,
- {
+{
     background-size: cover;
     background-image: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
-     //    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
+    //    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
     height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
-  }
+}
 
 .yogaButton {
     background: none;
 }
-
 /*style the two sections at the bottom of the page*/
 
- section  {
-    text-align: center;      
+section {
+    text-align: center;
 }
-
 /*meditation page*/
-.meditationPage 
- {
+
+.meditationPage {
     background-size: cover;
     background-image: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
-//    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
+    //    background-image: url(http://gelohealthcare.com/wp-content/uploads/2015/02/yoga-art-photography-a47iwi9q.jpg);
     height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
-  }
+}
 
-body{
-    padding:0;
-    }
+body {
+    padding: 0;
+}
 
 //play button stays centered min/max width, responsive
 .playButton {
@@ -82,10 +75,9 @@ body{
     min-height: 100%;
     min-height: 100vh;
     min-width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 //.pauseButton {
@@ -93,31 +85,30 @@ body{
 //    background: none;
 //    padding-top:20em;
 //}
-
 .discoverYoga {
     background-size: cover;
     background-image: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
-//    background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-17.jpg);
+    //    background-image: url(http://demilked.uuuploads.com/free-paper-textures/free-paper-texture-17.jpg);
     height: 100vh;
     width: 100%;
     background-position-x: 50%;
     background-position-y: 50%;
-} 
+}
 
 .discoverYoga > p {
     text-align: center;
     min-height: 100%;
     min-height: 100vh;
     min-width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
     color: white;
 }
-
 /* poses.html styling */
-.poseSelection{
+
+.poseSelection {
     list-style: none;
 }
 
@@ -128,27 +119,23 @@ body{
     min-height: 100%;
     min-height: 100vh;
     min-width: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-
 /* google map to search for a studio */
 
-//.angular-google-map-container { 
-//    height: 400px;
-//}
-
-
-
+.angular-google-map-container {
+    height: 400px;
+}
 /* Supporting marketing content */
+
 //.marketing {
 //  margin: 40px 0;
 //  p + h4 {
 //    margin-top: 28px;
 //  }
 //}
-
 ///* Responsive: Portrait tablets and up */
 //@media screen and (min-width: 768px) {
 //  .container {
@@ -169,8 +156,8 @@ body{
 //  }
 //
 //  /* Remove the bottom border on the jumbotron for visual effect */
+/* Make the masthead heading the same height as the navigation */
 
-  /* Make the masthead heading the same height as the navigation */
 //  h3 {
 //    margin-top: 0;
 //    margin-bottom: 0;
@@ -178,8 +165,8 @@ body{
 //    padding-bottom: 19px;
 //  }
 //}
-
 /* Custom page footer */
+
 //.footer {
 //  padding-top: 19px;
 //  color: #777;
