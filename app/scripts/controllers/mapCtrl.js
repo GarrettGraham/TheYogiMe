@@ -30,7 +30,12 @@ angular.module('theYogiMe')
                 latitude: 28.6726664,
                 longitude: -81.4198279
             },
-            ];
+            {
+                id: 5,
+                latitude: 28.6722146,
+                longitude: -81.4737296
+                }
+                    ];
     });
 
 
