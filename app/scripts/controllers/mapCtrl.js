@@ -10,10 +10,16 @@ angular.module('theYogiMe')
             zoom: 11
         };
         $scope.studioMarkers = [{
-            id: 1,
-            latitude: 28.757783,
-            longitude: -81.369105
-                }];
+                id: 1,
+                latitude: 28.757783,
+                longitude: -81.369105
+        },
+            {
+                id: 2,
+                latitude: 28.6981543,
+                longitude: -81.3753033
+                }
+            ];
     });
 
 
