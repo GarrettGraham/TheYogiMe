@@ -25,10 +25,10 @@ angular.module('theYogiMe')
                 latitude: 28.6957451,
                 longitude: -81.3890362
                 },
-            {
+            { // zenality yoga studio
                 id: 4,
-                longitude: 28.6726664,
-                latitude: -81.4198279
+                latitude: 28.6726664,
+                longitude: -81.4198279
             },
             ];
     });
