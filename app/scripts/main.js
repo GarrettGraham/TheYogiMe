@@ -1,5 +1,5 @@
 /* jshint devel:true */
-//console.log('\'Allo \'Allo!');
+
 'use strict'
 
 var app = angular.module('theYogiMe', [
@@ -7,18 +7,18 @@ var app = angular.module('theYogiMe', [
     'uiGmapgoogle-maps',
     'firebase'
 ])
-app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
+app.config(function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('login', {
-            url: '/',
-            templateUrl: 'templates/login.html',
-            controller: 'loginCtrl',
-            controllerAs: 'login'
-        })
+    //        .state('login', {
+    //            url: '/',
+    //            templateUrl: 'templates/login.html',
+    //            controller: 'loginCtrl',
+    //            controllerAs: 'login'
+    //        })
         .state('home', {
-            url: '/home', //changed this from '/' to '/home' ...
+            url: '/',
             templateUrl: 'templates/main.html',
             controller: 'mainCtrl',
             controllerAs: 'main'
@@ -47,7 +47,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
             controller: 'mapCtrl',
             controllerAs: 'studioMap'
         });
-}]);
+})
 
 //.factory('Auth', function ($firebaseObject) {
 //    var auth = new Firebase('https://theyogime.firebaseio.com');
@@ -76,9 +76,8 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 //        },
 //
 //        logout: function () {
-//            if (auth.getAuth()) {
-//                return true;
-//            }
+//            auth.unauth();
+//            console.log("hello")
 //        },
 //
 //        loggedIn: function () {
@@ -87,12 +86,16 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 //            }
 //        },
 //
-//        function updateUser(authUser) {
-//            console.log(authdUser)
-//            if (authdUser === null) {
-//                return null;
-//            }
-//            console.log("")
+//        getUser: function () {
+//            return currentUser;
 //        }
-//    },
+//    };
+//
+//    function updateUser(authdUser) {
+//        console.log(authdUser)
+//        if (authdUser === null) {
+//            return null;
+//        }
+//        console.log("")
+//    }
 //});
