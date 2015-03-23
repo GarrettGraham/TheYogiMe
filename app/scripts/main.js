@@ -4,7 +4,8 @@
 
 var app = angular.module('theYogiMe', [
     'ui.router',
-    'uiGmapgoogle-maps'
+    'uiGmapgoogle-maps',
+    'firebase'
 ])
 app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
@@ -13,26 +14,31 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
         .state('home', {
             url: '/',
             templateUrl: 'templates/main.html',
-            controller: 'mainCtrl as main'
+            controller: 'mainCtrl',
+            controllerAs: 'main'
         })
         .state('yoga', {
             url: '/yoga',
             templateUrl: 'templates/yoga.html',
-            controller: 'yogaCtrl as yoga'
+            controller: 'yogaCtrl',
+            controllerAs: 'yoga'
         })
         .state('poses', {
             url: '/poses',
             templateUrl: 'templates/poses.html',
-            controller: 'posesCtrl as poses'
+            controller: 'posesCtrl',
+            controllerAs: 'poses'
         })
         .state('meditate', {
             url: '/meditate',
             templateUrl: 'templates/meditate.html',
-            controller: 'meditateCtrl as meditate'
+            controller: 'meditateCtrl',
+            controllerAs: 'meditate'
         })
         .state('studioMap', {
             url: '/studioMap',
             templateUrl: 'templates/studioMap.html',
-            controller: 'mapCtrl as studioMap'
+            controller: 'mapCtrl',
+            controllerAs: 'studioMap'
         });
 }]);
