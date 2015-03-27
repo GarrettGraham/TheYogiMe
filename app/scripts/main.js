@@ -11,7 +11,6 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-
         .state('home', {
             url: '/',
             templateUrl: 'templates/main.html',

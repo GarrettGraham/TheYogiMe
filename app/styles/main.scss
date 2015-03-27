@@ -131,17 +131,34 @@ body {
     z-index: 10;
     position: relative;
     opacity: .8;
+    margin: 2% auto 0;
 }
 
 .studiosMap {
     background-size: cover;
     background-image: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
     //    text-align: center;
-    min-height: 100%;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
+    //    min-height: 100%;
+    //    min-height: 100vh;
+    //    min-width: 100%;
+    //    display: flex;
     align-items: center;
     justify-content: center;
     z-index: 5;
+    position: relative;
+}
+/* the form with textarea */
+
+.reviews {
+    margin: 2% auto;
+    width: 60em;
+}
+
+textarea {
+    width: 100%;
+    background: white !important;
+}
+textarea.ng-touched {
+    width: 100%;
+    background: white !important;
 }
