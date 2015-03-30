@@ -38,6 +38,10 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             url: '/downDog',
             templateUrl: 'templates/tabs/downDog.html'
         })
+        .state('poses.warriorII', {
+            url: '/warriorII',
+            templateUrl: 'templates/tabs/warriorII.html'
+        })
         .state('meditate', {
             url: '/meditate',
             templateUrl: 'templates/meditate.html',
