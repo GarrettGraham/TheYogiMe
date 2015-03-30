@@ -11,12 +11,6 @@ app.config(function ($urlRouterProvider, $stateProvider) {
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-    //        .state('login', {
-    //            url: '/',
-    //            templateUrl: 'templates/login.html',
-    //            controller: 'loginCtrl',
-    //            controllerAs: 'login'
-    //        })
         .state('home', {
             url: '/',
             templateUrl: 'templates/main.html',
@@ -48,54 +42,3 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             controllerAs: 'studioMap'
         });
 })
-
-//.factory('Auth', function ($firebaseObject) {
-//    var auth = new Firebase('https://theyogime.firebaseio.com');
-//    var currentUser = {};
-//
-//    return {
-//
-//        onAuth: function (creds) {
-//            auth.onAuth(function (data) {
-//                creds(updateUser(data));
-//            });
-//        },
-//
-//        fblogin: function () {
-//
-//            return auth.authWithOAuthPopup("facebook", function (error, authData) {
-//                console.log(authData)
-//                if (error) {
-//                    concole.log("Login Failed!", error);
-//                } else {
-//                    console.log("Authenticated successfully with payload:", authData);
-//                }
-//            }, {
-//                remember: "sessionOnly"
-//            })
-//        },
-//
-//        logout: function () {
-//            auth.unauth();
-//            console.log("hello")
-//        },
-//
-//        loggedIn: function () {
-//            if (auth.getAuth()) {
-//                return true;
-//            }
-//        },
-//
-//        getUser: function () {
-//            return currentUser;
-//        }
-//    };
-//
-//    function updateUser(authdUser) {
-//        console.log(authdUser)
-//        if (authdUser === null) {
-//            return null;
-//        }
-//        console.log("")
-//    }
-//});

@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('theYogiMe')
-    .controller('mapCtrl', function mapCtrl($scope) {
+    .controller('mapCtrl', ['$scope', '$firebaseObject', function mapCtrl($scope, $firebaseObject) {
         $scope.map = {
             center: {
                 latitude: 28.6626364,
@@ -24,34 +24,31 @@ angular.module('theYogiMe')
                 id: 3,
                 latitude: 28.6957451,
                 longitude: -81.3890362
-                },
-            { // zenality yoga studio
-                id: 4,
-                latitude: 28.6726664,
-                longitude: -81.4198279
-            },
-            {
-                id: 5,
-                latitude: 28.6722146,
-                longitude: -81.4737296
                 }
+//            { // zenality yoga studio
+     //                id: 4,
+     //                latitude: 28.6726664,
+     //                longitude: -81.4198279
+     //            },
+     //            {
+     //                id: 5,
+     //                latitude: 28.6722146,
+     //                longitude: -81.4737296
+     //                }
                     ];
-    });
 
+        // this is where you will put the firebase array
+        var ref = new Firebase('https://theyogime.firebaseio.com/');
 
-//angular.module('theYogiMe')
-//    .controller('mapCtrl', function () {
-//            mapCtrl($scope) {
-//                $scope.map = {
-//                    center: {
-//                        latitude: 28,
-//                        longitude: -81
-//                    },
-//                    zoom: 8
-//                };
-//            };
-//        });
+        //        ref.child('reviews').set({
+        //            review: 'this is a new review'
+        //             
+        //        });
 
-//            mapCtrl ($scope) {
-//    $scope.map = { center: { latitude: 28, longitude: -81 }, zoom:8 };
-//});
+        $scope.addReview = function () {
+            ref.child('reviews').set({
+                studio: $scope.yogaReview //this is what is being modeled
+            })
+            $scope.yogaReview = ''; // this resets the form
+        };
+    }]);
