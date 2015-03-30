@@ -1,6 +1,6 @@
-<div class="chairYoga">
+<div class="poseVideos">
 
-    <div class="tabbble tabs-left">
+    <div class="navPillsLeft">
         <ul class="nav nav-pills nav-stacked">
             <li ng-class="{ active: main.active.tab == 'chairPoses' }">
                 <a ui-sref='poses.chairYoga' ng-click='poses.chairYoga'>Chair Yoga</a>
@@ -17,8 +17,10 @@
         </ul>
     </div>
 
+    <div class="videoPageOrientation">
+        <div ui-view></div>
+    </div>
 
-    <div ui-view></div>
 
 </div>
 
