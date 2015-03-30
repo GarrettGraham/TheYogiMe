@@ -29,6 +29,10 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             controller: 'posesCtrl',
             controllerAs: 'poses'
         })
+        .state('poses.chairYoga', {
+            url: '/chairYoga',
+            templateUrl: 'templates/tabs/chairYoga.html'
+        })
         .state('meditate', {
             url: '/meditate',
             templateUrl: 'templates/meditate.html',
