@@ -38,41 +38,46 @@
 
         <ul class=" nav nav-tabs">
             <li ng-class="{ active: main.active.tab == 'chairPoses' }">
-                <a ng-click='main.active.tab = "info"'>Chair Yoga</a>
+                <a ng-click='main.active.tab = "chairPoses"'>Chair Yoga</a>
             </li>
 
+            <!--
             <li ng-class="{ active: main.active.tab == 'downDog' }">
-                <a ng-click='main.active.tab = "downDog"'>Down Dog</a>
-            </li>
+    <a ng-click='main.active.tab = "downDog"'>Down Dog</a>
+</li>
 
-            <li ng-class="{ active: main.active.tab = 'warriorII' }"></li>
-            <a ng-click="{ active: main.active.tab = 'warriorII' }"></a>
+<li ng-class="{ active: main.active.tab = 'warriorII' }"></li>
+<a ng-click="{ active: main.active.tab = 'warriorII' }"></a>-->
 
         </ul>
 
         <div class="tab-content">
 
             <div ng-switch='main.active.tab'>
-                <div </div>
+                <div ng-switch-when='chairPoses' ng-include='"app/templates/tabs/chairYoga.html"'>
                 </div>
 
             </div>
 
-
-            <!--   wrap the videos in a div so as to better style them     -->
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6VLw2sjvuNU" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-
-
-
         </div>
 
+
+        <!--   wrap the videos in a div so as to better style them     -->
         <!--
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6VLw2sjvuNU" frameborder="0" allowfullscreen></iframe>
+-->
+
+
+
+
+
+
+
+
+    </div>
+
+    <!--
 // the below is a chair yoga video but there is not audio
 
 <div class="yoga-video">
