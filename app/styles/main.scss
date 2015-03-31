@@ -119,21 +119,24 @@ body {
     display: flex;
 }
 
+//Style for the video to be center of page
 .videoPageOrientation {
     //    border: solid 1px;
-//    margin-top: 15%;
-//    margin-left: 17.5%;
+    //    margin-top: 15%;
+    //    margin-left: 17.5%;
 }
-/* google map view for top 5 studios */
 
-.angular-google-map-container {
-    height: 25em;
-    width: 60em;
-    z-index: 10;
-    position: relative;
-    opacity: .8;
-    margin: 2% auto 0;
-}
+
+/* google map view for top 5 studios */
+//
+//.angular-google-map-container {
+//    height: 25em;
+//    width: 60em;
+//    z-index: 10;
+//    position: relative;
+//    opacity: .8;
+//    margin: 2% auto 0;
+//}
 
 .studiosMap {
     background-size: cover;
@@ -148,6 +151,8 @@ body {
     z-index: 5;
     position: relative;
 }
+
+
 /* the form with textarea */
 
 .reviews {
