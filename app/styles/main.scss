@@ -125,9 +125,8 @@ body {
     //    margin-top: 15%;
     //    margin-left: 17.5%;
 }
-
-
 /* google map view for top 5 studios */
+
 //
 //.angular-google-map-container {
 //    height: 25em;
@@ -137,22 +136,19 @@ body {
 //    opacity: .8;
 //    margin: 2% auto 0;
 //}
-
 .studiosMap {
     background-size: cover;
     background-image: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
-    //    text-align: center;
-    //    min-height: 100%;
-    //    min-height: 100vh;
-    //    min-width: 100%;
-    //    display: flex;
+    text-align: center;
+    min-height: 100%;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 5;
-    position: relative;
+    //    z-index: 5;
+    //    position: relative;
 }
-
-
 /* the form with textarea */
 
 .reviews {

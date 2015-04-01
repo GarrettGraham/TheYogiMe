@@ -1,3 +1,9 @@
+'use strict'
+
+angular.module('theYogiMe')
+    .controller('mapCtrl', function () {});
+
+
 //'use strict'
 //
 //angular.module('theYogiMe')
@@ -35,7 +41,7 @@
 //                latitude: 28.6722146,
 //                longitude: -81.4737296
 //                }
-];
+//];
 
 // this is where you will put the firebase array
 //        var ref = new Firebase('https://theyogime.firebaseio.com/');
@@ -43,7 +49,7 @@
 //        $scope.addReview = function () {
 //            ref.child('reviews').set({
 //                studio1: $scope.yogaReview //this is what is being modeled
-})
+//})
 //            $scope.yogaReview = ''; // this resets the form
-};
-}]);
+//};
+//}]);
