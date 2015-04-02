@@ -29,6 +29,19 @@ app.config(function ($urlRouterProvider, $stateProvider) {
             controller: 'posesCtrl',
             controllerAs: 'poses'
         })
+        // below is the route to the chair yoga video
+        .state('poses.chairYoga', {
+            url: '/chairYoga',
+            templateUrl: 'templates/tabs/chairYoga.html'
+        })
+        .state('poses.downDog', {
+            url: '/downDog',
+            templateUrl: 'templates/tabs/downDog.html'
+        })
+        .state('poses.warriorII', {
+            url: '/warriorII',
+            templateUrl: 'templates/tabs/warriorII.html'
+        })
         .state('meditate', {
             url: '/meditate',
             templateUrl: 'templates/meditate.html',

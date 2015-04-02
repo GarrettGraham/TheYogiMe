@@ -1,22 +1,106 @@
+<div class="posesVids">
+
+    <div class="navPillsLeft">
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-class="{ active: main.active.tab == 'chairPoses' }">
+                <a ui-sref='poses.chairYoga' ng-click='poses.chairYoga'>Chair Yoga</a>
+            </li>
+
+            <li ng-class="{ active: main.active.tab == 'downDog' }">
+                <a ui-sref='poses.downDog' ng-click='poses.downDog'>Down Dog</a>
+            </li>
+
+            <li ng-class="{ active: main.active.tab == 'warriorII' }">
+                <a ui-sref='poses.warriorII' ng-click='poses.warriorII'>Warrior II</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="videoPageOrientation">
+        <div ui-view></div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--    navs for each video...click on one to watch chair yoga. click on another to watch downdog, etc. -> embed videos with links to their own html view     -->
+
+<!--    Re-format tabs in scss to move tabs to tob left corner of the page  -->
+
+<!--    except for the first tab...the names are place holders for now. want to have videos that focus on certain benefits like enhancing focus       -->
+
 <!--
-    <nav class="findAPose">
-            <div class="gridPoseMenu">
-                <ul class="poseSelection">
-                  <li class="col-md-4">
-                      <a href="#">Build Focus</a>
+    <div class=" tabbble tabs-left ">
+        <ul class="nav nav-tabs ">
+            <li ng-class="{ active: main.active.tab=='chairPoses' } ">
+                <a ng-click='main.active.tab = "chairPoses "'>Chair Yoga</a>
+            </li>
+-->
+<!--
+            <li ng-class="{ active: main.active.tab=='downDog' } ">
+    <a ng-click='main.active.tab = "downDog "'>Down Dog</a>
+</li>
+
+<li ng-class="{ active: main.active.tab='warriorII' } "></li>
+<a ng-click="{ active: main.active.tab='warriorII' } "></a>-->
+<!--
+        </ul>
+
+        <div class="tab-content ">
+
+            <div ng-switch='main.active.tab'>
+                <div ng-switch-when='chairPoses' ng-include='"templates/tabs/chairYoga.html "'>
+                </div>
+
+            </div>
+
+        </div>
+-->
+
+
+<!--   wrap the videos in a div so as to better style them     -->
+<!--
+
+        <iframe width="560 " height="315 " src="https://www.youtube.com/embed/6VLw2sjvuNU " frameborder="0 " allowfullscreen></iframe>
+<!--
+
+</div>
+-->
+
+
+
+
+
+
+<!--
+    <nav class="findAPose ">
+            <div class="gridPoseMenu ">
+                <ul class="poseSelection ">
+                  <li class="col-md-4 ">
+                      <a href="# ">Build Focus</a>
                       
    <!-- pose sequence that builds focus. Array tag for focus... -->
 <!--
                </li>
-               <li class="col-md-4">
-                   <a href="#">Calm The Mind</a>
+               <li class="col-md-4 ">
+                   <a href="# ">Calm The Mind</a>
 -->
 <!-- pose sequence that builds focus. Array tag for calm mind... -->
 <!--
 
                </li>
-                <li class="col-md-4">
-                    <a href="#">Relieve Stress</a>
+                <li class="col-md-4 ">
+                    <a href="# ">Relieve Stress</a>
 -->
 <!-- pose sequence that builds focus. Array tag for stress relief... -->
 <!--
@@ -25,56 +109,3 @@
         </div>
 </nav>
 -->
-
-<div class="chairYoga">
-
-    <!--    navs for each video...click on one to watch chair yoga. click on another to watch downdog, etc. -> embed videos with links to their own html view     -->
-
-    <!--    Re-format tabs in scss to move tabs to tob left corner of the page  -->
-
-    <!--    except for the first tab...the names are place holders for now. want to have videos that focus on certain benefits like enhancing focus       -->
-
-    <div class="tabbble tabs-left">
-
-        <ul class=" nav nav-tabs">
-            <li ng-class="{ active: main.active.tab == 'chairPoses' }">
-                <a ng-click='main.active.tab = "info"'>Chair Yoga</a>
-            </li>
-
-            <li ng-class="{ active: main.active.tab == 'downDog' }">
-                <a ng-click='main.active.tab = "downDog"'>Down Dog</a>
-            </li>
-
-            <li ng-class="{ active: main.active.tab = 'warriorII' }"></li>
-            <a ng-click="{ active: main.active.tab = 'warriorII' }"></a>
-
-        </ul>
-
-        <div class="tab-content">
-
-            <div ng-switch='main.active.tab'>
-                <div </div>
-                </div>
-
-            </div>
-
-
-            <!--   wrap the videos in a div so as to better style them     -->
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6VLw2sjvuNU" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-
-
-
-
-        </div>
-
-        <!--
-// the below is a chair yoga video but there is not audio
-
-<div class="yoga-video">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tAUf7aajBWE" frameborder="0" allowfullscreen></iframe>
-</div>-->
