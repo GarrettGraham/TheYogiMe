@@ -4,4 +4,41 @@
 
     <!-- I would like to include a list of instructors on this page with an email button that will link to the form page-->
 
+    <form class="form-horizontal clientLead">
+        <div class="form-group">
+            <div class="emailContent">
+                <fieldset>
+                    <img class="col-sm-2" src="http://lorempicsum.com/nemo/400/200/5">
+                    <div class="col-sm-10">
+                        <h2>Hello, {{instructorName}}</h2>
+                    </div>
+                    <p>My name is
+                        <input type="text" id="clientName" placeholder="First and Last Name"></input> and I am interested in scheduling a private lesson.</p>
+                    <div class="classType">
+                        <label>What type of Class?</label>
+                        <select class="form-control">
+                            <option>Beginner</option>
+                            <option>Chair-Yoga</option>
+                            <option>Vinyasa Flow</option>
+                        </select>
+                    </div>
+                    <div class="clientGoals">
+                        <label>My personal goals are:</label>
+                        <textarea class="form-control" rows="5" cols="5"></textarea>
+                    </div>
+                    <div class="availability">
+                        <label>My availability:</label>
+                        <select class="form-control">
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                            <option>Weekend</option>
+                        </select>
+                    </div>
+                    <label>Other Pertinent Info?</label>
+                    <textarea class="form-control" cols="5" cols="5"></textarea>
+            </div>
+        </div>
+        </fieldset>
+    </form>
 </div>
