@@ -10,12 +10,12 @@
                 <fieldset>
                     <img class="col-sm-2" src="http://lorempicsum.com/nemo/400/200/5">
                     <div class="col-sm-10">
-                        <h2>Hello, {{instructorName}}</h2>
+                        <h2>Hello, {InstructorName}</h2>
                     </div>
                     <p>My name is
                         <input type="text" id="clientName" placeholder="First and Last Name"></input> and I am interested in scheduling a private lesson.</p>
                     <div class="classType">
-                        <label>What type of Class?</label>
+                        <label>What type of class?</label>
                         <select class="form-control">
                             <option>Beginner</option>
                             <option>Chair-Yoga</option>
@@ -24,10 +24,10 @@
                     </div>
                     <div class="clientGoals">
                         <label>My personal goals are:</label>
-                        <textarea class="form-control" rows="5" cols="5"></textarea>
+                        <textarea class="form-control" rows="5" cols="5" placeholder="Reduce Stress, Increase Endurance, Increase Flexibility, etc."></textarea>
                     </div>
                     <div class="availability">
-                        <label>My availability:</label>
+                        <label>My availability is:</label>
                         <select class="form-control">
                             <option>Morning</option>
                             <option>Afternoon</option>
@@ -36,7 +36,16 @@
                         </select>
                     </div>
                     <label>Other Pertinent Info?</label>
-                    <textarea class="form-control" cols="5" cols="5"></textarea>
+                    <textarea class="form-control" rows="5" cols="5" placeholder="Physical Limitations, Surgery, etc."></textarea>
+                    <div class="form-group">
+                        <legend>Client Info:</legend>
+                        <input id="firstName" name="firstName" type="text" placeholder="First Name" class="form-control"></input>
+                        <input id="lastName" name="lastName" type="text" placeholder="Last Name" class="form-control"></input>
+                        <input id="email" type="email" placeholder="example@example.com" class="form-control"></input>
+
+
+
+                    </div>
             </div>
         </div>
         </fieldset>
