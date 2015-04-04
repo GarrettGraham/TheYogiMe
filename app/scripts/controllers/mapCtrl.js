@@ -1,7 +1,13 @@
 'use strict'
 
 angular.module('theYogiMe')
-    .controller('mapCtrl', function () {});
+	.controller('mapCtrl', function (SendEmail, $firebaseObject, $http) {
+		var self = this;
+		this.sentEmail = sendEmail.sentEmail;
+
+		var requestLesson = new Firebase('https://theyogime.firebaseio.com/Lesson/');
+		console.log(requestLesson);
+	});
 
 
 //'use strict'
