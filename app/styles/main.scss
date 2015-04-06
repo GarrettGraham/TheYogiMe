@@ -103,12 +103,21 @@ body {
 	min-height: 100vh;
 	min-width: 100%;
 	display: flex;
+	li {
+		border: solid 1px;
+		border-color: white;
+	}
+	a {
+		color: white;
+	}
 }
+/*Style for the video to be center of page*/
 
-//Style for the video to be center of page
-.videoPageOrientation {
-	border: solid 1px;
-}
+//.videoPageOrientation {
+//	border: solid 1px;
+//	align-items: center;
+//}
+/* Declarations for the email form */
 
 .emailForm {
 	background-size: cover;
@@ -124,6 +133,6 @@ body {
 	//    z-index: 5;
 	//    position: relative;
 	legend {
-		color:white;
+		color: white;
 	}
 }
