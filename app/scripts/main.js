@@ -1,14 +1,14 @@
 /* jshint devel:true */
 
-'use strict'
+'use strict';
 
 var app = angular.module('theYogiMe', [
     'ui.router',
-    'uiGmapgoogle-maps',
-    'firebase'
-])
+//    'uiGmapgoogle-maps',
+//    'firebase'
+]);
 
-.constant('FIREBASE_URL', 'https://theyogime.firebaseio.com/')
+//.constant('FIREBASE_URL', 'https://theyogime.firebaseio.com/')
 
 app.config(function ($urlRouterProvider, $stateProvider) {
 	$urlRouterProvider.otherwise('/');
@@ -52,51 +52,51 @@ app.config(function ($urlRouterProvider, $stateProvider) {
 			controllerAs: 'meditate'
 		})
 		.state('studioMap', {
-			url: '/studioMap',
-			templateUrl: 'templates/studioMap.html',
-			controller: 'mapCtrl',
-			controllerAs: 'studioMap'
-		})
+			url: '/scheduleLesson',
+			templateUrl: 'templates/scheduleLesson.html',
+			controller: 'lessonCtrl',
+			controllerAs: 'scheduleLesson'
+		});
 
-//	.factory('SendEmail', function ($http) {
-			//		var self = this;
-			//		var currentdate = new Date();
-			//		var time = (currentDate.getMonth() + 1) + "/" + currentDate.getDate() + "/" + currentDate.getFullYear() + " at " + currentDate.getHours() + ":" + currentDate.getMinutes();
-			//
-			//		return {
-			//
-			//			sentEmail: function () {
-			//				$http({
-			//					method: "POST",
-			//					url: "https://mandrillapp.com/api/1.0/messages/send-template.json",
-			//					data: {
-			//						'key': 'a2o-Xz8u1Lrb75Z2NlscsQ',
-			//						"template_name": "theyogime",
-			//						"template_content": [
-			//							{
-			//								"name": "example name",
-			//								"content": "example content"
-			//							}
-			//						],
-			//						'message': {
-			//							'from_email': 'ganderson7197@icloud.com',
-			//							'from_name': 'TheYogiMe',
-			//							'headers': {
-			//								'Reply-To': 'ganderson7197@icloud.com'
-			//							},
-			//
-			//							'subject': 'Lead for Private Lesson',
-			//							'to': [
-			//								{
-			//									'email': this.getEmail,
-			//									'name': 'name',
-			//									'type': 'to'
-			//									}],
-			//						}
-			//					}
-			//				})
-			//			}
-			//		}
-			//	});
+	//	.factory('SendEmail', function ($http) {
+	//		var self = this;
+	//		var currentdate = new Date();
+	//		var time = (currentDate.getMonth() + 1) + "/" + currentDate.getDate() + "/" + currentDate.getFullYear() + " at " + currentDate.getHours() + ":" + currentDate.getMinutes();
+	//
+	//		return {
+	//
+	//			sentEmail: function () {
+	//				$http({
+	//					method: "POST",
+	//					url: "https://mandrillapp.com/api/1.0/messages/send-template.json",
+	//					data: {
+	//						'key': 'a2o-Xz8u1Lrb75Z2NlscsQ',
+	//						"template_name": "theyogime",
+	//						"template_content": [
+	//							{
+	//								"name": "example name",
+	//								"content": "example content"
+	//							}
+	//						],
+	//						'message': {
+	//							'from_email': 'ganderson7197@icloud.com',
+	//							'from_name': 'TheYogiMe',
+	//							'headers': {
+	//								'Reply-To': 'ganderson7197@icloud.com'
+	//							},
+	//
+	//							'subject': 'Lead for Private Lesson',
+	//							'to': [
+	//								{
+	//									'email': this.getEmail,
+	//									'name': 'name',
+	//									'type': 'to'
+	//									}],
+	//						}
+	//					}
+	//				})
+	//			}
+	//		}
+	//	});
 
 });

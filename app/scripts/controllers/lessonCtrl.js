@@ -1,6 +1,6 @@
 'use strict';
 angular.module('theYogiMe')
-	.controller('mapCtrl', function () {
+	.controller('lessonCtrl', function () {
 
 		$('#submitEmail').on('click', function () {
 			alert('Your email was sent successfully');
