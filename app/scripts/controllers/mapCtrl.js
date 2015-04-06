@@ -1,6 +1,11 @@
 'use strict'
 angular.module('theYogiMe')
-	.controller('mapCtrl', function () {});
+	.controller('mapCtrl', function () {
+
+//		$('#submitButton').click(function () {
+				//			alert('Your email was sent successfully');
+				//		}),
+	});
 //angular.module('theYogiMe')
 //	.controller('mapCtrl', function (SendEmail, $firebaseObject, $http) {
 //		var self = this;
