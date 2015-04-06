@@ -1,25 +1,25 @@
 <div class="posesVids">
 
-    <div class="navPillsLeft">
-        <ul class="nav nav-pills nav-stacked">
-            <li ng-class="{ active: main.active.tab == 'chairPoses' }">
-                <a ui-sref='poses.chairYoga' ng-click='poses.chairYoga'>Chair Yoga</a>
-            </li>
+	<div class="navPills">
+		<ul class="nav nav-pills nav-justified">
+			<li ng-class="{ active: main.active.tab == 'chairPoses' }">
+				<a ui-sref='poses.chairYoga' ng-click='poses.chairYoga'>Chair Yoga</a>
+			</li>
 
-            <li ng-class="{ active: main.active.tab == 'downDog' }">
-                <a ui-sref='poses.downDog' ng-click='poses.downDog'>Down Dog</a>
-            </li>
+			<li ng-class="{ active: main.active.tab == 'downDog' }">
+				<a ui-sref='poses.downDog' ng-click='poses.downDog'>Down Dog</a>
+			</li>
 
-            <li ng-class="{ active: main.active.tab == 'warriorII' }">
-                <a ui-sref='poses.warriorII' ng-click='poses.warriorII'>Warrior II</a>
-            </li>
+			<li ng-class="{ active: main.active.tab == 'warriorII' }">
+				<a ui-sref='poses.warriorII' ng-click='poses.warriorII'>Warrior II</a>
+			</li>
 
-        </ul>
-    </div>
+		</ul>
+	</div>
 
-    <div class="videoPageOrientation">
-        <div ui-view></div>
-    </div>
+	<div class="videoPageOrientation">
+		<div ui-view></div>
+	</div>
 
 
 </div>
