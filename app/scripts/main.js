@@ -32,7 +32,7 @@ app.config(function ($urlRouterProvider, $stateProvider) {
 			controller: 'posesCtrl',
 			controllerAs: 'poses'
 		})
-		// below is the route to the chair yoga video
+		// below is the route to the yoga videos
 		.state('poses.chairYoga', {
 			url: '/chairYoga',
 			templateUrl: 'templates/tabs/chairYoga.html'
@@ -45,19 +45,20 @@ app.config(function ($urlRouterProvider, $stateProvider) {
 			url: '/warriorII',
 			templateUrl: 'templates/tabs/warriorII.html'
 		})
+		//meditation page with audio
 		.state('meditate', {
 			url: '/meditate',
 			templateUrl: 'templates/meditate.html',
 			controller: 'meditateCtrl',
 			controllerAs: 'meditate'
 		})
-		.state('studioMap', {
+		//schedule a private lesson through email form
+		.state('scheduleLesson', {
 			url: '/scheduleLesson',
 			templateUrl: 'templates/scheduleLesson.html',
 			controller: 'lessonCtrl',
 			controllerAs: 'scheduleLesson'
 		});
-
 	//	.factory('SendEmail', function ($http) {
 	//		var self = this;
 	//		var currentdate = new Date();
