@@ -1,9 +1,9 @@
-'use strict'
+'use strict';
 
 angular.module('theYogiMe')
-    .controller('meditateCtrl', function () {
-        // console.log($scope)
-    });
+	.controller('meditateCtrl', function () {
+		// console.log($scope)
+	});
 //        .directive('audio-player', function ($rootScope) {
 //            return {
 //                restrict: 'E',

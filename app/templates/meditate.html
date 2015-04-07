@@ -1,62 +1,21 @@
 <div class="meditationPage">
-    <div class="form-group">
-        <button ng-disabled="currentNum == 0" class="btn btn-default prev" ng-click="prev()"><i class="glyphicon glyphicon-step-backward"></i>
-        </button>
-        <button class="btn btn-default playpause" ng-click="playhouse()" ng-class="{paused:audio.paused}">
-            <span class="play"><i class="glyphicon glyphicon-play"></i></span>
-            <span class="pause"><i class="glyphicon glyphicon-pause"></i></span>
-        </button>
-        <button ng-disabled="currentNum >= (totalNum-1)" class="btn btn-default next" ng-click="next()"><i class="glyphicon glyphicon-step-forward"></i>
-        </button>
-
-    </div>
-</div>
+	<audio id="audio1" src="audio/anyOtherName.mp3"></audio>
+	<button onClick="audioHandler()" type="button" class="btn btn-lg playButton"><span class="glyphicon glyphicon-play"></span><span class="glyphicon glyphicon-pause"></span>
 
 
-<!--
-<div class="meditationPage">
-    <audio id="audio1" src="audio/anyOtherName.mp3"></audio>
-    <button onClick="audioHandler()" type="button" class="btn btn-lg playButton"><span class="glyphicon glyphicon-play"></span>
+		<!--function for play/pause audio-->
+		<script>
+			var status = false;
+			var audio = document.getElementById("audio1");
 
-    <button onClick="stop()" type="button" class="btn btn-lg pauseButton"><span class="glyphicon glyphicon-pause"></span>    
-    </button>
--->
-
-
-
-
-
-
-<!--
-   // function for play/pause audio
-           <script>
-            var status = false;
-            var audio = document.getElementById("audio1");
-
-            function audioHandler() {
-                if (status == false || audio.paused) {
-                    audio.play();
-                    status = true;
-                } else {
-                    audio.pause();
-                    status = false;
-                }
-            }
-
-    // just a function for playing audio
-                  
-                   function play() {
-                    var audio = document.getElementById('audio1');
-                       
-                       if (audio.paused) {
-                        audio.play();
-                       }else{
-                        audio.currentTime = 0
-                       }
-                   }
-        </script>
--->
-
-
-
+			function audioHandler() {
+				if (status == false || audio.paused) {
+					audio.play();
+					status = true;
+				} else {
+					audio.pause();
+					status = false;
+				}
+			}
+		</script>
 </div>

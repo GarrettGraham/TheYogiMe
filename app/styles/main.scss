@@ -8,160 +8,160 @@ $heroImage: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.j
 .header,
 .marketing,
 .footer {
-    padding-left: 15px;
-    padding-right: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-/* nav bar home button */
-
-//.header {
-//    
-//    background: #6cd7a2;
-//}
 /* Custom page header */
 
 .header {
-    border-bottom: 1px solid #e5e5e5;
-    padding-top: 1em;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 1em;
 }
 /* Welcome Yogi Message and button to route to 'why yoga' page */
 
 .welcomeMessage {
-    padding-top: 9%;
-    text-align: center;
-    color: white;
-    //  .yogaHistory {
-    ////      padding-bottom:0;
-    //  }
+	padding-top: 9%;
+	text-align: center;
+	color: white;
 }
 
 // home page
 .heroImage {
-    background-size: cover;
-    background-image: $heroImage;
-    height: 100vh;
-    width: 100%;
-    background-position-x: 50%;
-    background-position-y: 50%;
+	background-size: cover;
+	background-image: $heroImage;
+	height: 100vh;
+	width: 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
 }
 
 .yogaButton {
-    background: none;
+	background: none;
 }
-/*style the section at the bottom of the page*/
+/*style the links to the different views at the bottom of the page*/
 
-section {
-    text-align: center;
+.homePage {
+	text-align: center;
+	color: white;
+	a {
+		color: white;
+	}
 }
 /*meditation page*/
 
 .meditationPage {
-    background-size: cover;
-    background-image: $heroImage;
-    height: 100vh;
-    width: 100%;
-    background-position-x: 50%;
-    background-position-y: 50%;
+	background-size: cover;
+	background-image: $heroImage;
+	height: 100vh;
+	width: 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
 }
 
 body {
-    padding: 0;
+	padding: 0;
 }
 
 //play button stays centered min/max width, responsive
 .playButton {
-    text-align: center;
-    background: none;
-    min-height: 100%;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	text-align: center;
+	background: none;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white !important;
 }
 
-//.pauseButton {
-//    text-align: center;
-//    background: none;
-//    padding-top:20em;
-//}
-.discoverYoga {
-    background-size: cover;
-    background-image: $heroImage;
-    height: 100vh;
-    width: 100%;
-    background-position-x: 50%;
-    background-position-y: 50%;
+.discoverYogaBackground {
+	background-size: cover;
+	background-image: $heroImage;
+	//	height: 100vh;
+	//	width: 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+	//		p {
+	//			text-align: center;
+	//			border: 1px solid;
+	//			border-color: white;
+	//			color: white;
+	//			text-align: center;
+	//			display: block;
+	//		}
 }
 
-.discoverYoga > p {
-    text-align: center;
-    min-height: 100%;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    color: white;
+.discoverYogaText {
+	//	text-align: center;
+	//	border: 1px solid;
+	//	border-color: white;
+	//	color: white;
+	//	text-align: center;
+	//	display: block;
+	//	align-content: center;
+	//	display: flex;
+	//}
+	text-align: center;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	p {
+		border: 1px solid;
+		border-color: white;
+		font-size: 1.25em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
 }
 /* poses.html styling */
 
-//.poseSelection {
-//    list-style: none;
-//}
 .posesVids {
-    background-size: cover;
-    background-image: $heroImage;
-    min-height: 100%;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
+	background-size: cover;
+	background-image: $heroImage;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	li {
+		border: solid 1px;
+		border-color: white;
+	}
+	a {
+		color: white;
+	}
 }
+/*Style for the video to be center of page*/
 
-//Style for the video to be center of page
 .videoPageOrientation {
-    //    border: solid 1px;
-    //    margin-top: 15%;
-    //    margin-left: 17.5%;
+	//	border: solid 1px;
+	//	vertical-align: center;
+	margin-top: 10em;
 }
-/* google map view for top 5 studios */
+/* Declarations for the email form */
 
-//
-//.angular-google-map-container {
-//    height: 25em;
-//    width: 60em;
-//    z-index: 10;
-//    position: relative;
-//    opacity: .8;
-//    margin: 2% auto 0;
-//}
-.studiosMap {
-    background-size: cover;
-    background-image: $heroImage;
-    text-align: center;
-    min-height: 100%;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    //    z-index: 5;
-    //    position: relative;
+.emailForm {
+	background-size: cover;
+	background-image: $heroImage;
+	color: white;
+	text-align: center;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//    z-index: 5;
+	//    position: relative;
+	legend {
+		color: white;
+	}
 }
-/* textarea */
 
-//
-//.reviews {
-//    margin: 2% auto;
-//    width: 60em;
-//}
-//
-//textarea {
-//    width: 100%;
-//    background: white !important;
-//}
-//
-//textarea.ng-touched {
-//    width: 100%;
-//    background: white !important;
-//}
+input {
+	color: black;
+}
