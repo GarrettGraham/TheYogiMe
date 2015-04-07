@@ -1,6 +1,6 @@
 {
   "firebase": "theyogime",
-  "public": ".",
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",
