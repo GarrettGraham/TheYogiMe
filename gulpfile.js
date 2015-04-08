@@ -142,6 +142,30 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
 	}));
 });
 
+//gulp.task('build', ['templates'], function () {
+//	return gulp.src('dist/**/*').pipe($.size({
+//		title: 'build',
+//		gzip: true
+//	}));
+//});
+
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');
 });
+
+//trying to figure out how to get the templates to render on deployment
+//gulp.task('templates', function () {
+//	gulp.src(['./app/templates/*.html'])
+//		.pipe(minifyHTML({
+//			quotes: true
+//		}))
+//		.pipe(templates({
+//			filename: 'templates.js',
+//			root: 'templates',
+//			standalone: true
+//		}))
+//		.pipe(size({
+//			title: 'HTML fragments'
+//		}))
+//		.pipe(gulp.dest('www/'));
+//});

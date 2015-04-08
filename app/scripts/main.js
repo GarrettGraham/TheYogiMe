@@ -35,15 +35,15 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 		// below is the route to the yoga videos
 		.state('poses.chairYoga', {
 			url: '/chairYoga',
-			templateUrl: 'templates/tabs/chairYoga.html'
+			templateUrl: 'templates/chairYoga.html'
 		})
 		.state('poses.downDog', {
 			url: '/downDog',
-			templateUrl: 'templates/tabs/downDog.html'
+			templateUrl: 'templates/downDog.html'
 		})
 		.state('poses.warriorII', {
 			url: '/warriorII',
-			templateUrl: 'templates/tabs/warriorII.html'
+			templateUrl: 'templates/warriorII.html'
 		})
 		//meditation page with audio
 		.state('meditate', {
