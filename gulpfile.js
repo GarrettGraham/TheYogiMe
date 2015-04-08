@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-
+//var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', function () {
 	return gulp.src('app/styles/main.scss')
@@ -144,3 +144,28 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');
 });
+
+// below is a gulp task i included to help figure out the problem with firebase deploy
+//gulp.task('uglify-js', function () {
+//	gulp.src(['client/js/libraries/**/*.js', 'client/js/source/**/*.js'])
+//		.pipe(concat('app'))
+//		.pipe(ngAnnotate())
+//		.pipe(uglify({
+//			mangle: false
+//		}))
+//		.pipe(rename({
+//			extname: ".min.js"
+//		}))
+//		.pipe(gulp.dest('client/js'));
+//});
+//gulp.task('deploy', function () {
+//	return gulp.src('./dist/**/*')
+//		.pipe(ghPages());
+//});
+
+//
+//gulp.task('deploy', ['build'], function () {
+//	return gulp.src('dist')
+//		.pipe($.subtree())
+//		.pipe($.clean());
+//});

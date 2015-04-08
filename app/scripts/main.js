@@ -3,8 +3,7 @@
 'use strict';
 
 var app = angular.module('theYogiMe', [
-    'ui.router', 'firebase'
-]);
+    'ui.router', 'firebase']);
 //
 //.constant('FIREBASE_URL', 'https://theyogime.firebaseio.com/')
 app.config(function ($urlRouterProvider, $stateProvider) {
