@@ -76,6 +76,12 @@ gulp.task('fonts', function () {
 		.pipe(gulp.dest('.tmp/fonts'))
 		.pipe(gulp.dest('dist/fonts'));
 });
+//
+//gulp.task('audio', function () {
+//	return gulp.src(
+//		'app/*.mp3')
+//		 
+//});
 
 gulp.task('extras', function () {
 	return gulp.src([
