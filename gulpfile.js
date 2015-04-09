@@ -69,6 +69,8 @@ gulp.task('images', function () {
 		.pipe(gulp.dest('dist/images'));
 });
 
+
+
 gulp.task('fonts', function () {
 	return gulp.src(require('main-bower-files')({
 			filter: '**/*.{eot,svg,ttf,woff,woff2}'
