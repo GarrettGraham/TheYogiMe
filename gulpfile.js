@@ -70,7 +70,6 @@ gulp.task('images', function () {
 });
 
 
-
 gulp.task('fonts', function () {
 	return gulp.src(require('main-bower-files')({
 			filter: '**/*.{eot,svg,ttf,woff,woff2}'
