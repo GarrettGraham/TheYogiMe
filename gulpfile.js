@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-var ghPages = require('gulp-gh-Pages');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', function () {
 	return gulp.src('app/styles/main.scss')
@@ -165,7 +165,7 @@ gulp.task('default', ['clean'], function () {
 
 gulp.task('deploy', function () {
 	return gulp.src('./dist/**.*')
-		.pipe(ghPages);
+		.pipe(ghPages());
 });
 
 //trying to figure out how to get the templates to render on deployment
