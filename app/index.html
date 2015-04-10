@@ -101,12 +101,15 @@
 	<script src="scripts/controllers/lessonCtrl.js"></script>
 	<script type="application/javascript" src="//src.fireform.org/fireform.min.js">
 		options = {
-			emailNotification: "ganderson7197@icloud.com",
+			emailNotification: "cygarrrett1989@gmail.com",
 			emailConfirmationName: "InputName", //The form input we get the email from.
-			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
+			emailConfirmationFrom: "cygarrett1989@gmail.com", //Email appears as sent by this address.
 			emailConfirmationSubject: "Thanks for signing up",
 			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-			emailConfirmationBodyText: "You have been signed up!"
+			emailConfirmationBodyText: "You have been signed up!",
+			callback: function (err, val) {
+				console.log('success')
+			}
 		}
 		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
 	</script>
