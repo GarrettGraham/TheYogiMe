@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var ghPages = require('gulp-gh-Pages')
 
 gulp.task('styles', function () {
 	return gulp.src('app/styles/main.scss')
@@ -142,6 +143,8 @@ gulp.task('wiredep', function () {
 //  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 //});
 
+
+
 gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
 	return gulp.src('dist/**/*').pipe($.size({
 		title: 'build',
@@ -158,6 +161,11 @@ gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
 
 gulp.task('default', ['clean'], function () {
 	gulp.start('build');
+});
+
+gulp.task('deploy', function () {
+	return gulp.src('./dist/**.*')
+		.pipe(ghPages);
 });
 
 //trying to figure out how to get the templates to render on deployment
