@@ -49,19 +49,6 @@
 	<!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>-->
 
 	<!-- build:js scripts/vendor.js -->
-	<!--	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>-->
-	<!--	<script src="https://s3.amazonaws.com/fireform/fireform.min.js"></script>-->
-	<script type="application/javascript" src="//src.fireform.org/fireform.min.js">
-		options = {
-			emailNotification: "ganderson7197@icloud.com",
-			emailConfirmationName: "InputName", //The form input we get the email from.
-			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
-			emailConfirmationSubject: "Thanks for signing up",
-			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-			emailConfirmationBodyText: "You have been signed up!"
-		}
-		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-	</script>
 	<!-- bower:js -->
 	<script src="/bower_components/jquery/dist/jquery.js"></script>
 	<script src="/bower_components/angular/angular.js"></script>
@@ -74,20 +61,21 @@
 	<!-- endbuild -->
 
 
-	<!--	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>-->
 	<!--
+	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>
 	<script>
-	options = {
-		emailNotification: "ganderson7197@icloud.com",
-		emailConfirmationName: "InputName", //The form input we get the email from.
-		emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
-		emailConfirmationSubject: "Thanks for signing up",
-		emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-		emailConfirmationBodyText: "You have been signed up!"
-	}
-	new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-</script>
+		options = {
+			emailNotification: "ganderson7197@icloud.com",
+			emailConfirmationName: "InputName", //The form input we get the email from.
+			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
+			emailConfirmationSubject: "Thanks for signing up",
+			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
+			emailConfirmationBodyText: "You have been signed up!"
+		}
+		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
+	</script>
 -->
+
 	<!-- build:js scripts/plugins.js -->
 	<script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
 	<script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -111,20 +99,17 @@
 	<script src="scripts/controllers/meditateCtrl.js"></script>
 	<script src="scripts/controllers/posesCtrl.js"></script>
 	<script src="scripts/controllers/lessonCtrl.js"></script>
-	<!--	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>-->
-	<!--
-	<script>
-	options = {
-		emailNotification: "ganderson7197@icloud.com",
-		emailConfirmationName: "InputName", //The form input we get the email from.
-		emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
-		emailConfirmationSubject: "Thanks for signing up",
-		emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-		emailConfirmationBodyText: "You have been signed up!"
-	}
-	new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-</script>
--->
+	<script type="application/javascript" src="//src.fireform.org/fireform.min.js">
+		options = {
+			emailNotification: "ganderson7197@icloud.com",
+			emailConfirmationName: "InputName", //The form input we get the email from.
+			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
+			emailConfirmationSubject: "Thanks for signing up",
+			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
+			emailConfirmationBodyText: "You have been signed up!"
+		}
+		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
+	</script>
 	<!-- endbuild -->
 </body>
 
