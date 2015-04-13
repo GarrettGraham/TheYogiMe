@@ -29,6 +29,8 @@
 	<!--    <footer ng-include="'app/footer.html'"></footer>  -->
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
+
 	<script>
 		(function (b, o, i, l, e, r) {
 			b.GoogleAnalyticsObject = l;
@@ -46,6 +48,19 @@
 		ga('send', 'pageview');
 	</script>
 
+	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>
+	<script>
+		options = {
+			emailNotification: "ganderson7197@icloud.com",
+			emailConfirmationName: "InputName", //The form input we get the email from.
+			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
+			emailConfirmationSubject: "Thanks for signing up",
+			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
+			emailConfirmationBodyText: "You have been signed up!",
+			//			callback: function (err, val) { // console.log('success') // }
+		}
+		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
+	</script>
 	<!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>-->
 
 	<!-- build:js scripts/vendor.js -->
@@ -60,22 +75,6 @@
 	<!-- endbower -->
 	<!-- endbuild -->
 
-
-	<!--
-	<script type="application/javascript" src="//src.fireform.org/fireform.min.js">
-</script>
-<script>
-	options = {
-		emailNotification: "ganderson7197@icloud.com",
-		emailConfirmationName: "InputName", //The form input we get the email from.
-		emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
-		emailConfirmationSubject: "Thanks for signing up",
-		emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-		emailConfirmationBodyText: "You have been signed up!"
-	}
-	new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-</script>
--->
 	<!-- build:js scripts/plugins.js -->
 	<script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
 	<script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -99,21 +98,8 @@
 	<script src="scripts/controllers/meditateCtrl.js"></script>
 	<script src="scripts/controllers/posesCtrl.js"></script>
 	<script src="scripts/controllers/lessonCtrl.js"></script>
-	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>
-	<script>
-		options = {
-			emailNotification: "ganderson7197@icloud.com",
-			emailConfirmationName: "InputName", //The form input we get the email from.
-			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
-			emailConfirmationSubject: "Thanks for signing up",
-			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
-			emailConfirmationBodyText: "You have been signed up!",
-			//			callback: function (err, val) { // console.log('success') // }
-		}
-
-		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-	</script>
 	<!-- endbuild -->
+
 </body>
 
 </html>
