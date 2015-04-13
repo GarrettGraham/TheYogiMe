@@ -13,4 +13,15 @@
 		}(window, document, 'script', 'ga'));
 		ga('create', 'UA-XXXXX-X');
 		ga('send', 'pageview');
+	</script> <script type=application/javascript src=//src.fireform.org/fireform.min.js></script> <script>
+		options = {
+			emailNotification: "ganderson7197@icloud.com",
+			emailConfirmationName: "InputName", //The form input we get the email from.
+			emailConfirmationFrom: "ganderson7197@icloud.com", //Email appears as sent by this address.
+			emailConfirmationSubject: "Thanks for signing up",
+			emailConfirmationBodyHTML: "<p>You have been signed up!</p>",
+			emailConfirmationBodyText: "You have been signed up!",
+			//			callback: function (err, val) { // console.log('success') // }
+		}
+		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
 	</script>  <script src=scripts/vendor.js></script> <script src=scripts/plugins.js></script> <script src=scripts/main.js></script> </body> </html>
