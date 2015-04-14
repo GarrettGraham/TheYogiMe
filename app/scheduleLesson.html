@@ -4,7 +4,7 @@
 
 	<!-- I would like to include a list of instructors on this page with an email button that will link to the form page-->
 
-	<form class="form-horizontal clientLead" id="MySelector" novalidate>
+	<form class="form-horizontal clientLead" id="contactForm" novalidate>
 		<div class="form-group col-sm-12">
 			<div class="emailContent">
 				<fieldset>
@@ -15,7 +15,7 @@
 						and I am interested in scheduling a private lesson.</p>
 					<div class="classType">
 						<label>What type of class?</label>
-						<select class="form-control" name="LessonLevel">
+						<select class="form-control" name="LessonLevel" id="classSelection">
 							<option>Beginner</option>
 							<option>Chair-Yoga</option>
 							<option>Vinyasa Flow</option>
@@ -50,11 +50,13 @@
 			</div>
 			</fieldset>
 	</form>
+	<!--
 	<script type="application/javascript" src="//src.fireform.org/fireform.min.js"></script>
-	<script>
-		options = {
-			emailNotification: "ganderson7197@icloud.com"
-		}
-		new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
-	</script>
+<script>
+	options = {
+		emailNotification: "ganderson7197@icloud.com"
+	}
+	new Fireform('#MySelector', 'https://fireform.org/list/256/TheYogiMe', options);
+</script>
+-->
 	</div>
