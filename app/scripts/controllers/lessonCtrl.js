@@ -6,8 +6,9 @@ angular.module('theYogiMe')
 			jQuery(function ($) {
 				$('#contactForm').submit(function () {
 					var email = $('#email').val(); //get email field value
-					var name = $('#clientName').val(); //get name field value
-					var msg = $('#msg').val(); //get message field value
+					var name = $('#clientName').val(); //get first name field value
+					var classSelection = $('#classSelection').val(); //get class selection field value
+
 
 					//		$('#submitEmail').on('click', function () {
 					//			alert('Your email was sent successfully');
