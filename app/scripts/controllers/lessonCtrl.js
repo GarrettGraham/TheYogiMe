@@ -5,9 +5,14 @@ angular.module('theYogiMe')
 
 			jQuery(function ($) {
 				$('#contactForm').submit(function () {
-					var email = $('#email').val(); //get email field value
 					var name = $('#clientName').val(); //get first name field value
 					var classSelection = $('#classSelection').val(); //get class selection field value
+					var clientGoals = $('#clientGoals').val(); //get client goals selection field value
+					var lessonTime = $('#lessonTime').val(); //get lesson time selection field value 
+					var clientInfo = $('#clientInfo').val(); // get client info field value
+					var clientName = $('#clientName').val(); //get client first name field value
+					var lastName = $('#lastName').val(); // get client last name field value
+					var clientEmail
 
 
 					//		$('#submitEmail').on('click', function () {
