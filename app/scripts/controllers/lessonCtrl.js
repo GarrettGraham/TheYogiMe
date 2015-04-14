@@ -2,7 +2,7 @@
 
 angular.module('theYogiMe')
 	.controller('lessonCtrl', function () {
-
+		var self = this;
 		jQuery(function ($) {
 			$('#contactForm').submit(function () {
 				var name = $('#clientName').val(); //get first name field value
@@ -26,13 +26,52 @@ angular.module('theYogiMe')
 									'Reply-To': clientEmail
 								},
 								'subject': 'Client Lead Contact Form Submission',
-								'text': 'clietnGoals' && 'clientInfo',
+								//								'text': 'clietnGoals' && 'clientInfo',
 								'to': [
 									{
 										'email': 'ganderson7197@icloud.com',
 										'name': 'Garrett Graham',
 										'type': 'to'
-													}]
+													}],
+								'global_merge_vars': [
+									{
+										'name': 'name',
+										'content': this.clientName
+												},
+									{
+										'name': 'classSelection',
+										'content': this.classSelection
+												},
+									{
+										'name': 'clientGoals',
+										'content': this.clientGoals
+												},
+									{
+										'name': 'lessonTime',
+										'content': this.lessonTime
+												},
+									{
+										'name': 'clientInfo',
+										'content': this.clientInfo
+												},
+									{
+										'name': 'firstName',
+										'content': this.firstName
+												},
+									{
+										'name': 'lastName',
+										'content': this.lastName
+												},
+									{
+										'name': 'clientEmail',
+										'content': this.clientEmail
+												},
+									{
+										'name': 'phoneNumber',
+										'content': this.phoneNumber
+
+												},
+													]
 							}
 						}
 					})
