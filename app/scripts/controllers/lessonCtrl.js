@@ -4,7 +4,10 @@ angular.module('theYogiMe')
 	.controller('lessonCtrl', function () {
 
 			jQuery(function ($) {
-				$("#contactForm").submit(function () {
+				$('#contactForm').submit(function () {
+					var email = $('#email').val(); //get email field value
+					var name = $('#clientName').val(); //get name field value
+					var msg = $('#msg').val(); //get message field value
 
 					//		$('#submitEmail').on('click', function () {
 					//			alert('Your email was sent successfully');
