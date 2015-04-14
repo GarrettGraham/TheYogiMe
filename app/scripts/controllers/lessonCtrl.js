@@ -38,7 +38,7 @@ angular.module('theYogiMe')
 					})
 					.done(function (response) {
 						alert('Your messsage has been sent. Thank you!'); //show success message
-						var name = $('#clientName').val(); //reset first name field value
+						var name = $('#clientName').val(''); //reset first name field value
 						var classSelection = $('#classSelection').val(''); //reset class selection field value
 						var clientGoals = $('#clientGoals').val(''); //reset client goals selection field value
 						var lessonTime = $('#lessonTime').val(''); //reset lesson time selection field value 
@@ -57,5 +57,4 @@ angular.module('theYogiMe')
 				//			alert('Your email was sent successfully');
 			});
 		});
-
 	});
