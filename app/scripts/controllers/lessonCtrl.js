@@ -45,8 +45,12 @@ angular.module('theYogiMe')
 										'content': name
 									},
 									{
-										'name': 'class',
+										'name': 'classSelection',
 										'content': classSelection
+									},
+									{
+										'name': 'clientGoals',
+										'content': clientGoals
 									}
 								]
 							}
