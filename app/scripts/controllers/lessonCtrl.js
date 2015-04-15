@@ -51,6 +51,30 @@ angular.module('theYogiMe')
 									{
 										'name': 'clientGoals',
 										'content': clientGoals
+									},
+									{
+										'name': 'lessonTime',
+										'content': lessonTime
+									},
+									{
+										'name': 'clientInfo',
+										'content': clientInfo
+									},
+									{
+										'name': 'firstName',
+										'content': firstName
+									},
+									{
+										'name': 'lastName',
+										'content': lastName
+									},
+									{
+										'name': 'clientEmail',
+										'content': clientEmail
+									},
+									{
+										'name': 'phoneNumber',
+										'content': phoneNumber
 									}
 								]
 							}
