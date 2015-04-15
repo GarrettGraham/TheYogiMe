@@ -1,0 +1,144 @@
+$icon-font-path: '../fonts/';
+$heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
+// bower:scss
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* Custom page header */
+
+.header {
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 1em;
+}
+/* Welcome Yogi Message and button to route to 'why yoga' page */
+
+.welcomeMessage {
+	padding-top: 9%;
+	text-align: center;
+	color: white;
+}
+
+// home page
+.heroImage {
+	background-size: cover;
+	background-image: $heroImage;
+	height: 100vh;
+	width: 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+
+.yogaButton {
+	background: none;
+}
+/*style the links to the different views at the bottom of the page*/
+
+.homePage {
+	text-align: center;
+	color: white;
+	a {
+		color: white;
+	}
+}
+/*meditation page*/
+
+.meditationPage {
+	background-size: cover;
+	background-image: $heroImage;
+	height: 100vh;
+	width: 100%;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+
+body {
+	padding: 0;
+}
+
+//play button stays centered min/max width, responsive
+.playButton {
+	text-align: center;
+	background: none;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white !important;
+}
+
+.discoverYogaBackground {
+	background-size: cover;
+	background-image: $heroImage;
+	background-position-x: 50%;
+	background-position-y: 50%;
+}
+
+.discoverYogaText {
+	text-align: center;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	p {
+		border: 1px solid;
+		border-color: white;
+		font-size: 1.25em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+}
+/* poses.html styling */
+
+.posesVids {
+	background-size: cover;
+	background-image: $heroImage;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	li {
+		border: solid 1px;
+		border-color: white;
+	}
+	a {
+		color: white;
+	}
+}
+/*Style for the video to be center of page*/
+
+.videoPageOrientation {
+	margin-top: 10em;
+}
+/* Declarations for the email form */
+
+.emailForm {
+	background-size: cover;
+	background-image: $heroImage;
+	color: white;
+	text-align: center;
+	min-height: 100%;
+	min-height: 100vh;
+	min-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	legend {
+		color: white;
+	}
+}
+
+input {
+	color: black;
+}
