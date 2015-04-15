@@ -21,7 +21,7 @@ angular.module('theYogiMe')
 						url: "https://mandrillapp.com/api/1.0/messages/send.json",
 						data: {
 							'key': 'a2o-Xz8u1Lrb75Z2NlscsQ',
-							'template_name': 'the-yogi-me',
+							'template_name': 'TheYogiMe',
 							'template_content': [
 								{
 									'name': 'example name',
@@ -47,10 +47,10 @@ angular.module('theYogiMe')
 										'name': 'name',
 										'content': $scope.clientName
 																												},
-								//									{
-								//										'name': 'classSelection',
-								//										'content': $scope.classSelection
-								//},
+									{
+										'name': 'classSelection',
+										'content': $scope.classSelection
+								}
 								//									{
 								//										'name': 'clientGoals',
 								//										'content': this.clientGoals
