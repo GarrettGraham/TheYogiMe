@@ -38,7 +38,7 @@ angular.module('theYogiMe')
 								'global_merge_vars': [
 									{
 										'name': 'name',
-										'content': 'clientName content'
+										'content': $scope.clientName
 																				},
 //									{
 								//										'name': 'classSelection',
