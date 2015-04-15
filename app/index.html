@@ -6,7 +6,6 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TheYogiMe</title>
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<!-- build:css styles/vendor.css -->
 	<!-- bower:css -->
@@ -19,15 +18,16 @@
 
 	<!-- build:js scripts/vendor/modernizr.js -->
 	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
 </head>
 
 <body>
 
-	<header ng-include="'templates/nav.html'"></header>
+	<header ng-include="'/nav.html'"></header>
 	<div ui-view></div>
-	<!--    <footer ng-include="'app/footer.html'"></footer>  -->
 
 	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+
 	<script>
 		(function (b, o, i, l, e, r) {
 			b.GoogleAnalyticsObject = l;
@@ -44,9 +44,6 @@
 		ga('create', 'UA-XXXXX-X');
 		ga('send', 'pageview');
 	</script>
-
-	<script src="http://src.fireform.org/fireform.min.js"></script>
-	<!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>-->
 
 	<!-- build:js scripts/vendor.js -->
 	<!-- bower:js -->
@@ -84,6 +81,7 @@
 	<script src="scripts/controllers/posesCtrl.js"></script>
 	<script src="scripts/controllers/lessonCtrl.js"></script>
 	<!-- endbuild -->
+
 </body>
 
 </html>

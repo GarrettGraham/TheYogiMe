@@ -1,5 +1,5 @@
 $icon-font-path: '../fonts/';
-$heroImage: url(http://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
+$heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.jpg);
 // bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -78,30 +78,11 @@ body {
 .discoverYogaBackground {
 	background-size: cover;
 	background-image: $heroImage;
-	//	height: 100vh;
-	//	width: 100%;
 	background-position-x: 50%;
 	background-position-y: 50%;
-	//		p {
-	//			text-align: center;
-	//			border: 1px solid;
-	//			border-color: white;
-	//			color: white;
-	//			text-align: center;
-	//			display: block;
-	//		}
 }
 
 .discoverYogaText {
-	//	text-align: center;
-	//	border: 1px solid;
-	//	border-color: white;
-	//	color: white;
-	//	text-align: center;
-	//	display: block;
-	//	align-content: center;
-	//	display: flex;
-	//}
 	text-align: center;
 	min-height: 100%;
 	min-height: 100vh;
@@ -138,8 +119,6 @@ body {
 /*Style for the video to be center of page*/
 
 .videoPageOrientation {
-	//	border: solid 1px;
-	//	vertical-align: center;
 	margin-top: 10em;
 }
 /* Declarations for the email form */
@@ -155,8 +134,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	//    z-index: 5;
-	//    position: relative;
 	legend {
 		color: white;
 	}
