@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('theYogiMe')
-	.controller('lessonCtrl', function ($http, $scope) {
-		//		var self = this;
+	.controller('lessonCtrl', function () {
 		jQuery(function ($) {
 			$('#contactForm').submit(function () {
 				var name = $('#clientName').val(); //get first name field value
@@ -13,21 +12,20 @@ angular.module('theYogiMe')
 				var firstName = $('#firstName').val(); //get client first name field value
 				var lastName = $('#lastName').val(); // get client last name field value
 				var clientEmail = $('#clientEmail').val(); //get client email field value
-				var phoneNumber = $('#phoneNumber').val(); //get client phone number field value
+				var phoneNumber = $('#phoneNumber').val(); //get client phone number field value	
 
-				//				$http({
 				$.ajax({
 						method: "POST",
-						url: "https://mandrillapp.com/api/1.0/messages/send.json",
+						url: "https://mandrillapp.com/api/1.0/messages/send-template.json",
 						data: {
 							'key': 'a2o-Xz8u1Lrb75Z2NlscsQ',
 							'template_name': 'TheYogiMe',
 							'template_content': [
 								{
 									'name': 'example name',
-									'content': 'example content'
-									}
-								],
+									'content': 'example content',
+												}
+											],
 							'message': {
 								'from_email': clientEmail,
 								'from_name': name,
@@ -35,50 +33,21 @@ angular.module('theYogiMe')
 									'Reply-To': clientEmail
 								},
 								'subject': 'Client Lead Contact Form Submission',
-								//								'text': 'clietnGoals' && 'clientInfo',
 								'to': [
 									{
 										'email': 'ganderson7197@icloud.com',
 										'name': 'Garrett Graham',
 										'type': 'to'
-																					}],
+									}],
 								'global_merge_vars': [
 									{
 										'name': 'name',
-										'content': $scope.clientName
-																												},
+										'content': name
+									},
 									{
-										'name': 'classSelection',
-										'content': $scope.classSelection
-								}
-								//									{
-								//										'name': 'clientGoals',
-								//										'content': this.clientGoals
-								//												},
-								//									{
-								//										'name': 'lessonTime',
-								//										'content': this.lessonTime
-								//												},
-								//									{
-								//										'name': 'clientInfo',
-								//										'content': this.clientInfo
-								//												},
-								//									{
-								//										'name': 'firstName',
-								//										'content': this.firstName
-								//												},
-								//									{
-								//										'name': 'lastName',
-								//										'content': this.lastName
-								//												},
-								//									{
-								//										'name': 'clientEmail',
-								//										'content': this.clientEmail
-								//												},
-								//									{
-								//										'name': 'phoneNumber',
-								//										'content': this.phoneNumber
-								//												},
+										'name': 'class',
+										'content': classSelection
+									}
 								]
 							}
 						}
@@ -97,11 +66,8 @@ angular.module('theYogiMe')
 					})
 					.error(function (response) {
 						alert('Error sending message.');
-					});
-
-
-				//		$('#submitEmail').on('click', function () {
-				//			alert('Your email was sent successfully');
+					})
 			});
 		});
 	});
+//});
