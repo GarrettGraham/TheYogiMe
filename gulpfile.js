@@ -139,10 +139,10 @@ gulp.task('wiredep', function () {
 		.pipe(gulp.dest('app'));
 });
 
+//below is the commented out gulp function that includes jshint
 //gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
 //  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 //});
-
 
 
 gulp.task('build', ['html', 'images', 'fonts', 'extras'], function () {
@@ -167,21 +167,4 @@ gulp.task('default', ['clean'], function () {
 //gulp.task('deploy', function () {
 //	return gulp.src('./dist/**/*')
 //		.pipe(ghPages());
-//});
-
-//trying to figure out how to get the templates to render on deployment
-//gulp.task('templates', function () {
-//	gulp.src(['./app/templates/*.html'])
-//		.pipe(minifyHTML({
-//			quotes: true
-//		}))
-//		.pipe(templates({
-//			filename: 'templates.js',
-//			root: 'templates',
-//			standalone: true
-//		}))
-//		.pipe(size({
-//			title: 'HTML fragments'
-//		}))
-//		.pipe(gulp.dest('www/'));
 //});
