@@ -11,21 +11,21 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 	padding-left: 15px;
 	padding-right: 15px;
 }
-/* Custom page header */
 
+// Custom page header
 .header {
 	border-bottom: 1px solid #e5e5e5;
 	padding-top: 1em;
 }
-/* Welcome Yogi Message and button to route to 'why yoga' page */
 
+// Welcome Yogi Message and button to route to 'why yoga' page
 .welcomeMessage {
 	padding-top: 9%;
 	text-align: center;
 	color: white;
 }
 
-// home page
+//home page
 .heroImage {
 	background-size: cover;
 	background-image: $heroImage;
@@ -38,8 +38,8 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 .yogaButton {
 	background: none;
 }
-/*style the links to the different views at the bottom of the page*/
 
+//style the links on the page
 .homePage {
 	text-align: center;
 	color: white;
@@ -47,8 +47,8 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 		color: white;
 	}
 }
-/*meditation page*/
 
+//meditation page
 .meditationPage {
 	background-size: cover;
 	background-image: $heroImage;
@@ -99,8 +99,8 @@ body {
 		margin-right: 2em;
 	}
 }
-/* poses.html styling */
 
+// poses.html styling
 .posesVids {
 	background-size: cover;
 	background-image: $heroImage;
@@ -116,12 +116,13 @@ body {
 		color: white;
 	}
 }
-/*Style for the video to be center of page*/
 
+//Style for the video to be center of page
 .videoPageOrientation {
 	margin-top: 10em;
 }
-/* Declarations for the email form */
+
+//Declarations for the email form 
 
 .emailForm {
 	background-size: cover;
