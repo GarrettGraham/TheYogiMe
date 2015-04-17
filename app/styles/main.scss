@@ -100,7 +100,7 @@ body {
 	}
 }
 
-// poses.html styling
+// yoga videos styling
 .posesVids {
 	background-size: cover;
 	background-image: $heroImage;
@@ -112,18 +112,17 @@ body {
 		border: solid 1px;
 		border-color: white;
 	}
-	a {
-		color: white;
-	}
 }
 
+a {
+	color: white;
+}
+}
 //Style for the video to be center of page
 .videoPageOrientation {
 	margin-top: 10em;
 }
-
 //Declarations for the email form 
-
 .emailForm {
 	background-size: cover;
 	background-image: $heroImage;
@@ -139,7 +138,7 @@ body {
 		color: white;
 	}
 }
-
+//input text as black
 input {
 	color: black;
 }
