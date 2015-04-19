@@ -100,7 +100,7 @@ body {
 	}
 }
 
-// yoga videos styling
+// poses.html page styling
 .posesVids {
 	background-size: cover;
 	background-image: $heroImage;
@@ -112,16 +112,23 @@ body {
 		border: solid 1px;
 		border-color: white;
 	}
+	a {
+		color: white;
+	}
+//	@media (max-width: 767px) {
+//		nav-justified > li {
+//			margin-left: 5em;
+//		}
+//	}
 }
 
-a {
-	color: white;
-}
-}
 //Style for the video to be center of page
 .videoPageOrientation {
 	margin-top: 10em;
+	position: relative;
+	overflow: hidden;
 }
+
 //Declarations for the email form 
 .emailForm {
 	background-size: cover;
@@ -138,7 +145,14 @@ a {
 		color: white;
 	}
 }
-//input text as black
+
+//input fields
 input {
 	color: black;
 }
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		nav-justified > li {
+			margin-left: 5em;
+		}
+	}
