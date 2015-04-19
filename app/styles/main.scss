@@ -151,8 +151,15 @@ input {
 	color: black;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+//@media (min-width: 320px) and (max-width: 767px) {
+//	.navPills {
+//		//		margin-left: 5em;
+//		max-width: 150%;
+//	}
+//}
+@media (max-width: 767px) {
 	.navPills {
 		margin-left: 5em;
+		margin-right: 5em;
 	}
 }
