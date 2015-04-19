@@ -115,11 +115,11 @@ body {
 	a {
 		color: white;
 	}
-//	@media (max-width: 767px) {
-//		nav-justified > li {
-//			margin-left: 5em;
-//		}
-//	}
+	//	@media (max-width: 767px) {
+	//		nav-justified > li {
+	//			margin-left: 5em;
+	//		}
+	//	}
 }
 
 //Style for the video to be center of page
@@ -151,8 +151,8 @@ input {
 	color: black;
 }
 
-	@media (min-width: 320px) and (max-width: 767px) {
-		nav-justified > li {
-			margin-left: 5em;
-		}
+@media (min-width: 320px) and (max-width: 767px) {
+	.navPills {
+		margin-left: 5em;
 	}
+}
