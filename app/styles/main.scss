@@ -11,21 +11,21 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 	padding-left: 15px;
 	padding-right: 15px;
 }
-/* Custom page header */
 
+// Custom page header
 .header {
 	border-bottom: 1px solid #e5e5e5;
 	padding-top: 1em;
 }
-/* Welcome Yogi Message and button to route to 'why yoga' page */
 
+// Welcome Yogi Message and button to route to 'why yoga' page
 .welcomeMessage {
 	padding-top: 9%;
 	text-align: center;
 	color: white;
 }
 
-// home page
+//home page
 .heroImage {
 	background-size: cover;
 	background-image: $heroImage;
@@ -38,8 +38,8 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 .yogaButton {
 	background: none;
 }
-/*style the links to the different views at the bottom of the page*/
 
+//style the links on the page
 .homePage {
 	text-align: center;
 	color: white;
@@ -47,8 +47,8 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 		color: white;
 	}
 }
-/*meditation page*/
 
+//meditation page
 .meditationPage {
 	background-size: cover;
 	background-image: $heroImage;
@@ -99,8 +99,8 @@ body {
 		margin-right: 2em;
 	}
 }
-/* poses.html styling */
 
+// poses.html page styling
 .posesVids {
 	background-size: cover;
 	background-image: $heroImage;
@@ -115,14 +115,21 @@ body {
 	a {
 		color: white;
 	}
+	//	@media (max-width: 767px) {
+	//		nav-justified > li {
+	//			margin-left: 5em;
+	//		}
+	//	}
 }
-/*Style for the video to be center of page*/
 
+//Style for the video to be center of page
 .videoPageOrientation {
 	margin-top: 10em;
+	position: relative;
+	overflow: hidden;
 }
-/* Declarations for the email form */
 
+//Declarations for the email form 
 .emailForm {
 	background-size: cover;
 	background-image: $heroImage;
@@ -139,6 +146,21 @@ body {
 	}
 }
 
+//input fields
 input {
 	color: black;
+}
+
+//@media (min-width: 320px) and (max-width: 767px) {
+//	.navPills {
+//		//		margin-left: 5em;
+//		max-width: 150%;
+//	}
+//}
+//media querie for responsive yoga video view
+@media (max-width: 767px) {
+	.navPills {
+		margin-left: 5em;
+		margin-right: 5em;
+	}
 }
