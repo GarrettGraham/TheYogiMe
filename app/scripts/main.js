@@ -3,7 +3,7 @@
 'use strict';
 
 var app = angular.module('theYogiMe', [
-    'ui.router',
+    'ui.router', 'ngAudio'
 
 ]);
 
