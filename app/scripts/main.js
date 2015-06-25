@@ -4,7 +4,6 @@
 
 var app = angular.module('theYogiMe', [
     'ui.router', 'ngAudio'
-
 ]);
 
 //must put the urlRouterProvider and stateProvider as parameters as well as within the function arguments so that the build and firebase deploy works correctly
