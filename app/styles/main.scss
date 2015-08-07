@@ -29,7 +29,7 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 .heroImage {
 	background-size: cover;
 	background-image: $heroImage;
-	height: 100vh;
+	height: 35vh;
 	width: 100%;
 	background-position-x: 50%;
 	background-position-y: 50%;
@@ -40,12 +40,13 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 }
 
 //style the links on the page
-.homePage {
+.main-content {
 	text-align: center;
-	color: white;
-	a {
-		color: white;
-	}
+	color: black;
+	// color: white;
+	// a {
+	// 	color: white;
+	// }
 }
 
 //meditation page
@@ -129,7 +130,7 @@ body {
 	overflow: hidden;
 }
 
-//Declarations for the email form 
+//Declarations for the email form
 .emailForm {
 	background-size: cover;
 	background-image: $heroImage;

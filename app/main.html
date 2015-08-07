@@ -1,50 +1,42 @@
 <div>
-	<div class="banner">
-		<div class="heroImage">
-			<div class="welcomeMessage">
-				<h1>The Yogi Me</h1>
-				<p>
-					<!-- Route to postive message -->
-					<button class="btn btn-lg yogaButton" ui-sref="yoga">Click Here to Discover Yoga</button>
-				</p>
-				<br>
-				<br>
-				<br>
-			</div>
-			<div class="homePage">
-				<div class="col-xs-12 col-md-4">
-					<section class="findAPose">
-						<article class="yogaBenefit">
-							<h2 class="videoView"><a ui-sref="poses">Yoga at the Office</a></h2>
-							</button>
-							<!-- route to page of chair yoga video -->
-							<p>Click the heading to find ways to do yoga at the office.</p>
-						</article>
-					</section>
-				</div>
+	<!-- contatiner of the entire page -->
 
-				<div class="col-xs-12 col-md-4">
-					<section class="getCentered">
-						<article class="meditation">
-							<h2 class="audioView"><a ui-sref="meditate">Get Centered</a></h2>
-							<p>Remember to take some time for yourself and just be. Click the heading to find your happy place.</p>
-						</article>
+	<div class="heroImage">
+		<div class="welcomeMessage">
+			<h1>The Yogi Me</h1>
 
-					</section>
-				</div>
+			<!-- Route to postive message -->
+			<button class="btn btn-lg yogaButton" ui-sref="yoga">Click Here to Discover Yoga</button>
 
-				<div class="col-xs-12 col-md-4">
-					<section class="findAStudio">
-						<article class="mapLocation">
-							<h2><a ui-sref="scheduleLesson">Schedule a Lesson</a></h2>
-							<p>Click the heading to schedule a private yoga session.</p>
-
-						</article>
-					</section>
-				</div>
-
-			</div>
 		</div>
 	</div>
 
+	<div class="main-content">
+
+		<!-- link yoga video view -->
+		<section class="findAPose col-xs-12 col-md-4">
+			<article class="yogaBenefit">
+				<h2 class="videoView"><a ui-sref="poses">Yoga at the Office</a></h2>
+				</button>
+				<p>Click the heading to find ways to do yoga at the office.</p>
+			</article>
+		</section>
+
+		<!-- link meditation view -->
+		<section class="getCentered col-xs-12 col-md-4">
+			<article class="meditation">
+				<h2 class="audioView"><a ui-sref="meditate">Get Centered</a></h2>
+				<p>Remember to take some time for yourself and just be. Click the heading to find your happy place.</p>
+			</article>
+		</section>
+
+		<!-- link email form view -->
+		<section class="findAStudio col-xs-12 col-md-4">
+			<article class="mapLocation">
+				<h2><a ui-sref="scheduleLesson">Schedule a Lesson</a></h2>
+				<p>Click the heading to schedule a private yoga session.</p>
+			</article>
+		</section>
+
+	</div>
 </div>
