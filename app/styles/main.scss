@@ -43,11 +43,24 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 .main-content {
 	text-align: center;
 	color: black;
-
+	margin-left: 2em;
+	margin-right: 2em;
 	// color: white;
 	// a {
 	// 	color: white;
 	// }
+}
+
+.viewLinks {
+	section {
+		border: 2px solid black;
+	}
+}
+
+.aboutYoga {
+	section {
+		margin-bottom:2em;
+	}
 }
 
 //meditation page
