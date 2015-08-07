@@ -1,23 +1,29 @@
-<div>
-	<!-- contatiner of the entire page -->
+<!-- contatiner of the entire page -->
 
-	<div class="heroImage">
-		<div class="welcomeMessage">
-			<h1>The Yogi Me</h1>
-
-			<!-- Route to postive message -->
-			<button class="btn btn-lg yogaButton" ui-sref="yoga">Click Here to Discover Yoga</button>
-
-		</div>
+<div class="heroImage">
+	<div class="welcomeMessage">
+		<h1>The Yogi Me</h1>
 	</div>
+</div>
 
-	<div class="main-content">
+<div class="main-content">
+
+
+	<div class="viewLinks">
+
+
+		<!-- Route to postive about yoga message -->
+		<section class="col-xs-12 col-md-4">
+			<article class="aboutYoga">
+				<h2><a ui-sref="yoga">About Yoga</a></h2>
+				<p>Click Here to Discover Yoga</p>
+			</article>
+		</section>
 
 		<!-- link yoga video view -->
 		<section class="findAPose col-xs-12 col-md-4">
 			<article class="yogaBenefit">
 				<h2 class="videoView"><a ui-sref="poses">Yoga at the Office</a></h2>
-				</button>
 				<p>Click the heading to find ways to do yoga at the office.</p>
 			</article>
 		</section>
@@ -31,12 +37,11 @@
 		</section>
 
 		<!-- link email form view -->
-		<section class="findAStudio col-xs-12 col-md-4">
+		<section class="findAStudio col-xs-12">
 			<article class="mapLocation">
 				<h2><a ui-sref="scheduleLesson">Schedule a Lesson</a></h2>
 				<p>Click the heading to schedule a private yoga session.</p>
 			</article>
 		</section>
-
 	</div>
 </div>
