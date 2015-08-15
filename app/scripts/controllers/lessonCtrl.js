@@ -1,3 +1,4 @@
+(function(){
 'use strict';
 
 angular.module('theYogiMe')
@@ -7,12 +8,12 @@ angular.module('theYogiMe')
 				var name = $('#clientName').val(); //get first name field value
 				var classSelection = $('#classSelection').val(); //get class selection field value
 				var clientGoals = $('#clientGoals').val(); //get client goals selection field value
-				var lessonTime = $('#lessonTime').val(); //get lesson time selection field value 
+				var lessonTime = $('#lessonTime').val(); //get lesson time selection field value
 				var clientInfo = $('#clientInfo').val(); // get client info field value
 				var firstName = $('#firstName').val(); //get client first name field value
 				var lastName = $('#lastName').val(); // get client last name field value
 				var clientEmail = $('#clientEmail').val(); //get client email field value
-				var phoneNumber = $('#phoneNumber').val(); //get client phone number field value	
+				var phoneNumber = $('#phoneNumber').val(); //get client phone number field value
 
 				$.ajax({
 						method: "POST",
@@ -85,7 +86,7 @@ angular.module('theYogiMe')
 						var name = $('#clientName').val(''); //reset first name field value
 						var classSelection = $('#classSelection').val(''); //reset class selection field value
 						var clientGoals = $('#clientGoals').val(''); //reset client goals selection field value
-						var lessonTime = $('#lessonTime').val(''); //reset lesson time selection field value 
+						var lessonTime = $('#lessonTime').val(''); //reset lesson time selection field value
 						var clientInfo = $('#clientInfo').val(''); // reset client info field value
 						var firstName = $('#firstName').val(''); // reset client first name field value
 						var lastName = $('#lastName').val(''); // reset client last name field value
@@ -98,4 +99,4 @@ angular.module('theYogiMe')
 			});
 		});
 	});
-//});
+})();

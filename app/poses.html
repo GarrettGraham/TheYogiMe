@@ -16,24 +16,44 @@
 			</li>
 
 		</ul>
-		<div class="videoPageOrientation">
+
+
+		<!-- <div class="videoPageOrientation">
 			<div ui-view></div>
-	</div>
-<!-- Add coments to the page -->
+	</div> -->
+		<!-- Add coments to the page -->
+
 		<section style="margin: 5em 5em 5em 5em">
-		<form ng-submit="">
-			<div class="form-group">
+			<form ng-submit="poses.addComment()">
+				<div class="commentsForm form-group">
+					<h4 class="title">
+						<strong>Share a Comment</strong>
+					</h4>
+					<label for="inputNAme">Name</label>
+					<input type="text" class="form-control" autofos="true" id="inputName" placeholder="Name" ng-model="poses.newCommentName"></input>
+					<label>Message</label>
+					<textarea class="form-control" rows="8" placeholder="Share your message" ng-model="poses.newCommentText"></textarea>
+					<button class="btn btn-default" type="submit" ng-submit="">Submit</button>
+				</div>
+			</form>
 
-			<!-- <div class="comment form-control"> -->
-				<h4 class="title"><bold>Share a Comment</bold></h4>
-			<label for="inputNAme">Name</label>
-			<input type="text" class="form-control" autofos="true"id="inputName" ng-moedl="" placeholder="Name"></input>
-			<label>Message</label>
-			<textarea></textarea>
-		</div>
-		</form>
-
+			<!-- previously left comments display below the form -->
+			<div class="commentsSave">
+				<h4>
+					<strong>Previous Comments</strong>
+				</h4>
+				<ul class="list-group" ng-repeat="(id, comment) in poses.comment">
+					<li class="list-group item">
+						{{comment.text}}
+						<!-- comment text ex: {{comment.text}} -->
+						<br />
+						<small>
+							<strong>{{comment.name}}</strong>
+							<!-- name of who gave comment ex :{{comment.text}} -->
+						</small>
+					</li>
+				</ul>
+			</div>
 		</section>
-		</div>
 	</div>
 </div>

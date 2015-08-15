@@ -1,3 +1,5 @@
+//
+//(function(){
 //'use strict'
 ////angular.module('theYogiMe')
 //    .controller('loginCtrl', function ($firebaseArray, $firebaseObject, Auth) {
@@ -38,3 +40,4 @@
 //        }
 //
 //    });
+//  })();

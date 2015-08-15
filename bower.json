@@ -9,7 +9,8 @@
     "angular-google-maps": "~2.0.17",
     "lodash": "~3.5.0",
     "angularfire": "~1.0.0",
-    "angular-audio": "~1.6.2"
+    "angular-audio": "~1.6.2",
+    "firebase": "~2.2.7"
   },
   "devDependencies": {},
   "resolutions": {

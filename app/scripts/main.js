@@ -1,9 +1,10 @@
 /* jshint devel:true */
+(function(){
 
 'use strict';
 
 var app = angular.module('theYogiMe', [
-    'ui.router', 'ngAudio'
+    'ui.router', 'ngAudio', 'firebase'
 ]);
 
 //must put the urlRouterProvider and stateProvider as parameters as well as within the function arguments so that the build and firebase deploy works correctly
@@ -23,7 +24,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			controller: 'yogaCtrl',
 			controllerAs: 'yoga'
 		})
-    
+
 		.state('poses', {
 			url: '/poses',
 			templateUrl: '/poses.html',
@@ -59,3 +60,4 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 		});
 
 }]);
+})();
