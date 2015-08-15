@@ -23,6 +23,7 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			controller: 'yogaCtrl',
 			controllerAs: 'yoga'
 		})
+    
 		.state('poses', {
 			url: '/poses',
 			templateUrl: '/poses.html',
