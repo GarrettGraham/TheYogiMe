@@ -31,9 +31,9 @@
 					</h4>
 					<label for="inputNAme">Name</label>
 					<input type="text" class="form-control" autofos="true" id="inputName" placeholder="Name" ng-model="poses.newCommentName"></input>
-					<label>Message</label>
+					<label for="inputComment">Message</label>
 					<textarea class="form-control" rows="8" placeholder="Share your message" ng-model="poses.newCommentText"></textarea>
-					<button class="btn btn-default" type="submit" ng-submit="">Submit</button>
+					<button class="btn btn-default" type="submit">Submit</button>
 				</div>
 			</form>
 
@@ -42,13 +42,13 @@
 				<h4>
 					<strong>Previous Comments</strong>
 				</h4>
-				<ul class="list-group" ng-repeat="(id, comment) in poses.comment">
+				<ul class="list-group" ng-repeat="(key, comment) in poses.comments">
 					<li class="list-group item">
-						{{comment.text}}
+						{{comment.name}}
 						<!-- comment text ex: {{comment.text}} -->
 						<br />
 						<small>
-							<strong>{{comment.name}}</strong>
+							<strong>{{comment.text}}</strong>
 							<!-- name of who gave comment ex :{{comment.text}} -->
 						</small>
 					</li>
