@@ -1,6 +1,5 @@
 // controls the Home Page : main.html
 
-
 (function(){
 'use strict';
 

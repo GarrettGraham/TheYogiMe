@@ -27,12 +27,12 @@ $heroImage: url(https://saracrowleydotcom.files.wordpress.com/2014/03/green-sky.
 
 //home page
 .heroImage {
-	background-size: cover;
-	background-image: $heroImage;
-	height: 35vh;
+	background-size: contain;
+	background: $heroImage no-repeat center center;
+	height: 12.5em;
 	width: 100%;
-	background-position-x: 50%;
-	background-position-y: 50%;
+	// background-position-x: 50%;
+	// background-position-y: 50%;
 }
 
 // .yogaButton {

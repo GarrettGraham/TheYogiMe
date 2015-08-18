@@ -8,7 +8,7 @@ angular.module('theYogiMe')
 $http.get('https://theyogime.firebaseio.com/poses/.json')
 .then(function(response){
 	self.comment = response.data;
-	// console.log(self.comment);
+	console.log(response.data);
 });
 
 // persist data below the form
