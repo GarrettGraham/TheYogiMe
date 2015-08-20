@@ -58,6 +58,13 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			controller: 'lessonCtrl',
 			controllerAs: 'scheduleLesson'
 		});
+    //post form about yoga events
+    .stat('events', {
+      url:'/events',
+      templateUrl:'/yogaEvents.html',
+      controller:'eventsCtrl',
+      controllerAs:'events'
+    });
 
 }]);
 })();

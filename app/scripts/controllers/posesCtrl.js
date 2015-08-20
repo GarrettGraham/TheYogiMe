@@ -25,5 +25,7 @@ var ref = new Firebase('http://theyogime.firebaseio.com/poses/comments');
 		self.newCommentText = '';
 	};
 
+
+
 	});
 })();
