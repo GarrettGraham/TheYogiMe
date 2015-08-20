@@ -24,7 +24,6 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			controller: 'yogaCtrl',
 			controllerAs: 'yoga'
 		})
-
 		.state('poses', {
 			url: '/poses',
 			templateUrl: '/poses.html',
@@ -57,9 +56,9 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
 			templateUrl: '/scheduleLesson.html',
 			controller: 'lessonCtrl',
 			controllerAs: 'scheduleLesson'
-		});
+		})
     //post form about yoga events
-    .stat('events', {
+    .state('events', {
       url:'/events',
       templateUrl:'/yogaEvents.html',
       controller:'eventsCtrl',
