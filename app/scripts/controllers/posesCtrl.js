@@ -4,7 +4,7 @@
 angular.module('theYogiMe')
 	.controller('posesCtrl', function($http, $firebaseArray){
 	var self = this;
-	//save data to firebase using angularfire
+	//save data to firebase
 $http.get('https://theyogime.firebaseio.com/poses/.json')
 .then(function(response){
 	self.comment = response.data;
