@@ -21,6 +21,7 @@ var ref = new Firebase('http://theyogime.firebaseio.com/poses/comments');
 			name: self.newCommentName,
 			text: self.newCommentText
 		});
+		// input fields return to empty after form submission
 		self.newCommentName = '';
 		self.newCommentText = '';
 	};
