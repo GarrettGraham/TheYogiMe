@@ -2,7 +2,7 @@
 'use strict';
 
 angular.module('theYogiMe')
-.controller('eventsCtrl', function(){
+.controller('eventsCtrl', function($http, $firebaseArray){
 
 });
 

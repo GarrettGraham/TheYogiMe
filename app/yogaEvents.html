@@ -6,8 +6,46 @@
         <strong>Know of Yoga in the Area?</strong>
       </h4>
       <br>
-      <label for="yogaName">Yoga Event Name</label>
+      <label for="eventName">Yoga Event Name</label>
+      <input type="name" class="form-control" id="inputEventName" placeholder="Name of yoga event" ng-model="">
     </div>
+    <div class="form-group">
+      <label for="eventLocation">Location</label>
+      <input type="text" class="form-control" id="inputEventLocation" placeholder="Where is this event located?" ng-model="">
+    </div>
+    <div class="form-group">
+      <label for="eventDate">Date</label>
+      <input type="text" class="form-control" id="inputEventDate" placeholder="When will event be held?" ng-model="">
+    </div>
+    <div class="form-group">
+      <label for="eventTime">Time</label>
+      <input type="text" class="form-control" id="inputEventTime" placeholder="At what time will this event be held?" ng-model="">
+    </div>
+    <div class="form-group">
+      <label for="contact">Contact</label>
+      <input type="text" class="form-control" id="inputEventContact" placeholder="A good contact for this event" ng-model="">
+    </div>
+    <label for="additionalInfo">Additional Information</label>
+    <textarea type="text" class="form-control" id="inputEventInfo" rows="3" placeholder="Additional information about this event?"></textarea>
+    <br>
+    <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<div class="col-md-6">
+
+  <ul class="list-group" ng-repeat="">
+    <li class="list-group-item">
+      <strong>{{}}</strong>
+      <br>
+      <strong>Location: </strong> {{}}
+      <br>
+      <strong>Date: </strong> {{}}
+      <br>
+      <strong>Time: </strong> {{}}
+      <br>
+      <strong>Contact: </strong> {{}}
+      <br>
+      <strong>Infromation: </strong> {{}}
+    </li>
+  </ul>
 </div>
 </section>
