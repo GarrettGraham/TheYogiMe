@@ -11,7 +11,7 @@ $http.get('https://theyogime.firebaseio.com/events/.json')
 });
 
 var ref = new Firebase('https://theyogime.firebaseio.com/events/yogaEvent');
-// model the form data with firebase
+// model the form data with firebase and populate the data within the ng-repeat directive
   self.yogaEvent = $firebaseArray(ref);
 
   self.addYogaEvent = function(){
