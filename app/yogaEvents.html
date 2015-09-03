@@ -31,10 +31,10 @@
 </form>
 <div class="col-md-6">
   <ul class="list-group">
-    <li class="list-group-item" ng-repeat="(key, event) in events">
-      <strong>{{events.event.name}}</strong>
+    <li class="list-group-item" ng-repeat="(key, event) in events.yogaEvent">
+      <strong>{{event.name}}</strong>
       <br>
-      <strong>Location: </strong> {{events.yogaEvent.location}}
+      <strong>Location: </strong> {{event.location}}
       <br>
       <strong>Date: </strong> {{event.date}}
       <br>
