@@ -1,5 +1,4 @@
 <section class="yogaEvents">
-  <div class="row">
   <form class="yogaEventsForm col-md-6" ng-submit="events.addYogaEvent()">
     <div class="form-group">
       <h4 class="yogaEventsTitle">
@@ -31,20 +30,19 @@
     <button type="submit" class="btn btn-default">Submit</button>
 </form>
 <div class="col-md-6">
-
-  <ul class="list-group" ng-repeat="">
-    <li class="list-group-item">
-      <strong>{{}}</strong>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="(key, event) in events">
+      <strong>{{events.event.name}}</strong>
       <br>
-      <strong>Location: </strong> {{}}
+      <strong>Location: </strong> {{events.yogaEvent.location}}
       <br>
-      <strong>Date: </strong> {{}}
+      <strong>Date: </strong> {{event.date}}
       <br>
-      <strong>Time: </strong> {{}}
+      <strong>Time: </strong> {{event.time}}
       <br>
-      <strong>Contact: </strong> {{}}
+      <strong>Contact: </strong> {{event.contact}}
       <br>
-      <strong>Infromation: </strong> {{}}
+      <strong>Infromation: </strong> {{event.info}}
     </li>
   </ul>
 </div>

@@ -23,6 +23,13 @@ var ref = new Firebase('https://theyogime.firebaseio.com/events/yogaEvent');
         contact: self.newYogaContact,
         info: self.moreInfo
     });
+
+    self.newYogaEvent = '';
+    self.newYogaLocation = '';
+    self.newYogaDate = '';
+    self.newYogaTime = '';
+    self.newYogaContact = '';
+    self.moreInfo = '';
   };
 
 });
