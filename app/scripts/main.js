@@ -63,6 +63,12 @@ app.config(['$urlRouterProvider', '$stateProvider', function ($urlRouterProvider
       templateUrl:'/yogaEvents.html',
       controller:'eventsCtrl',
       controllerAs:'events'
+    })
+    .state('weather', {
+      url:'/weather',
+      templateUrl:'/weather.html',
+      controller:'weatherCtrl',
+      controllerAs: 'weather'
     });
 
 }]);
