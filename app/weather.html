@@ -1,8 +1,9 @@
 <div class="weatherForYoga">
 <form>
-  <input type="number" ng-model="zip">
+  <input type="tel" ng-model="zip">
   <input type="submit" value="Search" ng-click="findWeather(zip)">
 </form>
+<p ng-show="zip">Searching the forecasts for: {{zip}}</p>
 <div>
   <h1>Forecast For: {{ place.location.city }} </h1>
   <h2> Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}&deg;
@@ -10,6 +11,6 @@
   </h2>
   <div ng-repeat="forecast in place.item.forecast">
     <p><strong>{{ forecast.date }}</strong> - {{ forecast.text }}</p>
-      <p>H: {{ forecast.date }}&deg; | L: {{ forecast.low }}&deg;</p>
+      <p>H: {{ forecast.high }}&deg; | L: {{ forecast.low }}&deg;</p>
 </div>
 </div>
