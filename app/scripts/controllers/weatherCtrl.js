@@ -3,14 +3,16 @@
 
   angular.module('theYogiMe')
   .factory('yogiWeather', ['$http', '$q', function($http, $q){
-    var apiKey = '31bd9688a15a6e5353428ad1923d0f3a';
+    // var apiKey = '31bd9688a15a6e5353428ad1923d0f3a';
       // cachedForecast; //cache data from server request in order to store weather data from each query
 
     function getWeather (zip){
-      var deferred = $q.defer(),
-      lat = '28.538335',
-      lon = '-81.379236';
-      $http.get('http://api.forecast.io/forecast/' + apiKey + '/' + lat + ',' + lon)
+      var deferred = $q.defer();
+
+      console.log(deferred);
+      // lat = '28.538335',
+      // lon = '-81.379236';
+      $http.get('http://api.forecast.io/forecast/31bd9688a15a6e5353428ad1923d0f3a/28.538335,-81.379236')
       .success(function(data){
         deferred.resolve(data.query.results.channel);
       })
@@ -27,13 +29,13 @@
 
 angular.module('theYogiMe')
 .controller('weatherCtrl', ['$scope', 'yogiWeather', function($scope, yogiWeather){
-  // function fetchWeather(zip) {
-  //   yogiWeather.getWeather(zip).then(function(data){
-  //     $scope.place = data;
-  //   });
-  // }
-  // fetchWeather('32750');
-  //
+  function fetchWeather(zip) {
+    yogiWeather.getWeather(zip).then(function(data){
+      $scope.place = data;
+    });
+  }
+  fetchWeather('32750');
+
   // $scope.findWeather = function(zip) {
   //   $scope.place = '';
   //   fetchWeather(zip);
