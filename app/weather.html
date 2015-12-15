@@ -7,7 +7,7 @@
 <div>
   <h1>Forecast For: {{ place.location.city }} </h1>
   <h2> Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}&deg;
-    <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/>
+    <!-- <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/> -->
   </h2>
   <div ng-repeat="forecast in place.item.forecast">
     <p><strong>{{ forecast.date }}</strong> - {{ forecast.text }}</p>
