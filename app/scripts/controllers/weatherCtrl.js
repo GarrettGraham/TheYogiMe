@@ -5,7 +5,7 @@
   .factory('yogiWeather', ['$http', '$q', function($http, $q){
     function getWeather (zip){
       var deferred = $q.defer();
-      $http.get('https://query.yahooapis.com/v1/public/yql?q=SELECT%20*%20FROM%20weather.forecast%20WHERE%20location%3D%22' + zip + '%22&format=json&diagnostics=true&callback=')
+      $http.get('https://query.yahooapis.com/v1/public/yql?q=desc20%weather.forecast' + zip + '&format=json&diagnostics=true&callback=')
       .success(function(data){
         deferred.resolve(data.query.results.channel);
       })
