@@ -8,13 +8,15 @@
 
     function getWeather (zip){
       var deferred = $q.defer();
-
       console.log(deferred);
       // lat = '28.538335',
       // lon = '-81.379236';
-      $http.get('http://api.forecast.io/forecast/31bd9688a15a6e5353428ad1923d0f3a/28.538335,-81.379236')
-      .success(function(data){
-        deferred.resolve(data.query.results.channel);
+      $http({
+        method: 'GET',
+        url:'././forecast.json'
+      }).success(function(data){
+        console.log(data);
+        deferred.resolve(data.query);
       })
       .error(function(err){
         console.log('Error retrieving markets');
