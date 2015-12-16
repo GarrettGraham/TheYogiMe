@@ -16,7 +16,7 @@
         url:'././forecast.json'
       }).success(function(data){
         console.log(data);
-        deferred.resolve(data.query);
+        deferred.resolve(data);
       })
       .error(function(err){
         console.log('Error retrieving markets');
@@ -37,11 +37,10 @@ angular.module('theYogiMe')
     });
   }
   fetchWeather('32750');
-
-  // $scope.findWeather = function(zip) {
-  //   $scope.place = '';
-  //   fetchWeather(zip);
-  // };
+  $scope.findWeather = function(zip) {
+    $scope.place = '';
+    fetchWeather(zip);
+  };
 }]);
 // want to create a script that changes the background image of the page depending on the weather of the day. if it is sunny, display a animated background of a sunny day at the park. if it is cloudy display an appropriate animated image, if it is rainy/ stormy display an appropriate image, and if it is dusk show an appropriate image and if it is evening, show an appropriate image.
 })();

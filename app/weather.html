@@ -5,12 +5,12 @@
 </form>
 <p ng-show="zip">Searching the forecasts for: {{zip}}</p>
 <div>
-  <h1>Forecast For: {{ place.location.city }} </h1>
-  <h2> Current: {{ place.item.condition.text }} | {{ place.item.condition.temp }}&deg;
+  <h1>Forecast For: {{ place.timezone }} </h1>
+  <h2> Current: {{ place.currently.summary}} | {{ place.currently.temperature }}&deg;
     <!-- <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/> -->
   </h2>
-  <div ng-repeat="forecast in place.item.forecast">
-    <p><strong>{{ forecast.date }}</strong> - {{ forecast.text }}</p>
+  <div ng-repeat="forecast in place.daily.data">
+    <p><strong>{{ forecast.time }}</strong> - {{ forecast.summary }}</p>
       <p>H: {{ forecast.high }}&deg; | L: {{ forecast.low }}&deg;</p>
 </div>
 </div>
