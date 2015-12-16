@@ -11,6 +11,6 @@
   </h2>
   <div ng-repeat="forecast in place.daily.data">
     <p><strong>{{ forecast.time }}</strong> - {{ forecast.summary }}</p>
-      <p>H: {{ forecast.high }}&deg; | L: {{ forecast.low }}&deg;</p>
+      <p>H: {{ forecast.temperatureMax }}&deg; | L: {{ forecast.temperatureMin }}&deg;</p>
 </div>
 </div>
