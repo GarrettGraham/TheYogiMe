@@ -5,12 +5,75 @@
 </form>
 <p ng-show="zip">Searching the forecasts for: {{zip}}</p>
 <div>
-  <h1>Forecast For: {{ place.timezone }} </h1>
-  <h2> Current: {{ place.currently.summary}} | {{ place.currently.temperature }}&deg;
-    <!-- <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/> -->
-  </h2>
-  <div ng-repeat="forecast in place.daily.data">
-    <p><strong>{{ forecast.time }}</strong> - {{ forecast.summary }}</p>
+  <h1>Forecast For: {{ location }}, {{ place.address_components[3].short_name }}  </h1>
+  <h2> Current: {{ place.currently.summary}} | {{ place.currently.temperature }}&deg;</h2>
+
+  <!-- <img src="http://l.yimg.com/a/i/us/we/52/{{place.item.condition.code}}.gif"/> -->
+
+  <div ng-repeat="forecast in place">
+    <p><strong>{{ forecast }}</strong> - {{ forecast.summary }}</p>
       <p>H: {{ forecast.temperatureMax }}&deg; | L: {{ forecast.temperatureMin }}&deg;</p>
 </div>
 </div>
+
+<!-- CODE THAT DOES NOT BIND WITH angular
+<div class="container">
+<div id="fullpage">
+<div class="section active">
+    <header class="masthead">
+         <h1>Motherfucking Weather Version 0.0.5</h1>
+         <p>A T&J Enterprise</p>
+         <div class="input-group zipInput">
+        <input id="zipbox" type="text" class="form-control" placeholder="Fucking zip code">
+
+      <span class="input-group-btn">
+        <a href="#now"><button class="btn btn-default" type="button"><img src="http://cdn.icons8.com/iOS7/PNG/25/Hands/middle_finger-25.png"></button></a>
+      </span>
+    </div>
+    </header>
+ </div>
+
+
+    <div class="section" id="current" >
+            <a name="now"></a><h2 class="city">Seriously, enter your fucking zip code.</h2>
+
+             <ul class="current">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <i></i>
+    </div>
+
+
+
+    <div class="section"  id="#hourly">
+            <h2>Next 10 Fucking Hours</h2>
+             <ul class="hour">
+            </ul>
+    </div>
+
+
+
+    <div class="section" id="#tenday">
+            <h2>3 Day Fucking Forecast</h2>
+            <ul class="daily">
+                <li class="list-group-item day1">Fucking Tomorrow -- </li>
+                <li class="list-group-item day2"></li>
+                <li class="list-group-item day3"></li>
+            </ul>
+    </div>
+
+    <div class="section"  id="#hourly">
+            <h2>That's it.</h2>
+    </div>
+
+    <div class="section"  id="#hourly">
+            <h2>What the fuck else do you want?</h2>
+    </div>
+
+    <div class="section"  id="#hourly">
+            <h2>It's a fucking weather app.</h2>
+    </div> -->
+<!-- END: CODE THAT DOES NOT BIND WITH ANGULAR -->
