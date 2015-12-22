@@ -144,46 +144,54 @@
       $http({
         method: 'POST',
         url:'https://maps.googleapis.com/maps/api/geocode/json?address=' + zip + '&sensor=false'
-      }).success(function(data, conditions){
+      }).success(function(data){
         console.log(data);
         var lat = data.results[0].geometry.location.lat;
         var lon = data.results[0].geometry.location.lng;
         var location = data.results[0].address_components[1].long_name;
         console.log(location);
         // deferred.resolve(data.results[0]);
-
-        var TOKEN = '184506a405e7f4b36c5216258bbafbf0';
-        var API = _.template('https://api.forecast.io/forecast/${token}/${coords.lat},${coords.lon}');
-          /**line
-           * @param Object coords with { lat: Number, lon: Number }
-           */
+        var apiKey = '184506a405e7f4b36c5216258bbafbf0';
+        // var TOKEN = '184506a405e7f4b36c5216258bbafbf0';
+        // var API = _.template('https://api.forecast.io/forecast/${token}/${coords.lat},${coords.lon}');
+        //   /**line
+          //  * @param Object coords with { lat: Number, lon: Number }
+          //  */
           function getCurrentWeather( token, coords ){
-            console.log(coords);
-            return $.ajax({
+            var conditions = $q.defer();
+            console.log(conditions);
+            $http({
               method:'GET',
-              url: API({ token: token, coords: coords  }),
-              dataType: 'jsonp'
+              url: 'https://api.forecast.io/forecast/' + apiKey + '/' + coords.lat + ',' + coords.lon
+              // dataType: 'jsonp'
             })
-              .fail(function(){
+              .success(function(data){
+                var result = getCurrentWeather(apiKey, { lat: lat, lon: lon });
+                return result;
+                conditions.resolve(data);
+              })
+              .error(function(err){
                 // Add error message to page...
                 console.log("getWeather error");
-              })
-              .always(function(){
-                // Hide / remove loading animation...
-              })
-            ; // END request
-          }
+                conditions.reject(err);
+              });
+              return conditions.promise;
+            }
+            return{
+              getCurrentWeather: getCurrentWeather
+            }; // END request
+
 
           // Display loading animation...
-          var request = getCurrentWeather(TOKEN, { lat: '28.5299364', lon: '-81.9873477' });
-          var request = getCurrentWeather(TOKEN, { lat: lat, lon: lon });
+          // var request = getCurrentWeather(apiKey, { lat: '28.5299364', lon: '-81.9873477' });
+          // var request = getCurrentWeather(apiKey, { lat: lat, lon: lon });
 
-          request.done(function(conditions){
-            console.log(conditions);
-            console.log(data);
-            deferred.resolve(request);
-          })
-          // deferred.resolve(data, conditions);
+          // request.done(function(conditions){
+          //   console.log(conditions);
+          //   deferred.resolve(conditions);
+          // })
+           //
+           deferred.resolve(data);
       }).error(function(err){
         console.log('Error retrieving markets');
         deferred.reject(err);
